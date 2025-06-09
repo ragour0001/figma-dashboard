@@ -1,11 +1,23 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Sidebar() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <aside className="sidebar">
+    <aside
+      className={`sidebar ${isExpanded ? "sidebar-expanded" : "sidebar-collapsed"}`}
+    >
       <div className="sidebar-content">
         <div className="sidebar-nav">
           <div className="nav-items">
-            {/* Home - Active */}
-            <div className="nav-item active">
+            {/* Home - Active - Toggle Button */}
+            <div className="nav-item active" onClick={toggleSidebar}>
               <div className="nav-item-inner">
                 <svg
                   className="nav-icon"
@@ -19,6 +31,7 @@ export default function Sidebar() {
                     fill="#006B5F"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Dashboard</span>}
               </div>
             </div>
 
@@ -37,6 +50,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Target</span>}
               </div>
             </div>
 
@@ -55,6 +69,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Favorites</span>}
               </div>
             </div>
 
@@ -73,6 +88,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">AI Assistant</span>}
               </div>
             </div>
 
@@ -91,6 +107,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Analytics</span>}
               </div>
             </div>
 
@@ -109,6 +126,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Training</span>}
               </div>
             </div>
 
@@ -127,6 +145,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">News</span>}
               </div>
             </div>
 
@@ -147,6 +166,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Settings</span>}
               </div>
             </div>
 
@@ -165,6 +185,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Help</span>}
               </div>
             </div>
           </div>
