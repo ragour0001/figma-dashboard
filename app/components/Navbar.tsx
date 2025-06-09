@@ -3,10 +3,45 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <div className="logo">
-            <span className="logo-text">Refill</span>
-            <span className="logo-subtext">Health</span>
-          </div>
+          <svg
+            width="119"
+            height="42"
+            viewBox="0 0 119 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="logo"
+          >
+            <g>
+              {/* Refill Logo */}
+              <circle cx="21" cy="21" r="18" fill="#006B5F" />
+              <path d="M15 15h12v12H15z" fill="white" rx="2" />
+              <path d="M18 18h6v2h-6zM18 21h4v2h-4z" fill="#006B5F" />
+
+              {/* Refill Text */}
+              <text
+                x="45"
+                y="18"
+                fill="#006B5F"
+                fontSize="16"
+                fontWeight="700"
+                fontFamily="Inter"
+              >
+                Refill
+              </text>
+
+              {/* Health Text */}
+              <text
+                x="45"
+                y="32"
+                fill="#00C7B2"
+                fontSize="14"
+                fontWeight="500"
+                fontFamily="Inter"
+              >
+                Health
+              </text>
+            </g>
+          </svg>
         </div>
       </div>
 
