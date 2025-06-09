@@ -11,7 +11,7 @@ export default function Navbar() {
               aspectRatio: "17/6",
               position: "relative",
             }}
-            src="/assets/images/refill-health-logo.png"
+            src="/assets/images/logo.png"
             alt="Refill Health Logo"
             className="logo-image"
           />
