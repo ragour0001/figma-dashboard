@@ -1,0 +1,9 @@
+# This file represents the Refill Health logo image
+# You should replace this placeholder with the actual logo image file
+# The image should be saved as: public/refill-health-logo.png
+# Dimensions: 119px x 42px (aspect ratio 17:6)
+
+# To add the actual image:
+# 1. Save the Refill Health logo image as "refill-health-logo.png" 
+# 2. Place it in the "public" folder of your project
+# 3. The image will be automatically used by the updated Navbar component

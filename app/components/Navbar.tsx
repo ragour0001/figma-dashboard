@@ -3,73 +3,13 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <div className="logo-wrapper">
-            {/* Refill Health Logo Icon */}
-            <div className="logo-icon">
-              <svg
-                width="42"
-                height="42"
-                viewBox="0 0 42 42"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Background decorative elements */}
-                <ellipse
-                  cx="32"
-                  cy="12"
-                  rx="8"
-                  ry="6"
-                  fill="#B8E6D3"
-                  opacity="0.6"
-                />
-                <ellipse
-                  cx="8"
-                  cy="28"
-                  rx="6"
-                  ry="8"
-                  fill="#E8D5F2"
-                  opacity="0.5"
-                />
-                <ellipse
-                  cx="35"
-                  cy="30"
-                  rx="5"
-                  ry="4"
-                  fill="#C7E9F1"
-                  opacity="0.7"
-                />
-
-                {/* Main circular background */}
-                <circle cx="21" cy="21" r="18" fill="url(#refillGradient)" />
-
-                {/* White R letter */}
-                <path
-                  d="M15 13h6c2.5 0 4.5 2 4.5 4.5 0 1.5-0.8 2.8-2 3.5l2.5 5h-3l-2-4h-3v4h-3V13zm3 5h3c0.8 0 1.5-0.7 1.5-1.5S21.8 15 21 15h-3v3z"
-                  fill="white"
-                />
-
-                <defs>
-                  <linearGradient
-                    id="refillGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stopColor="#7C3AED" />
-                    <stop offset="50%" stopColor="#6366F1" />
-                    <stop offset="100%" stopColor="#4F46E5" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-
-            {/* Text Logo */}
-            <div className="logo-text-container">
-              <div className="logo-text-refill">Refill</div>
-              <div className="logo-text-health">Health</div>
-            </div>
-          </div>
+          <img
+            src="/refill-health-logo.png"
+            alt="Refill Health Logo"
+            className="logo-image"
+            width={119}
+            height={42}
+          />
         </div>
       </div>
 
