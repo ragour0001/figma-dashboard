@@ -3,45 +3,30 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <svg
-            width="119"
-            height="42"
-            viewBox="0 0 119 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="logo"
-          >
-            <g>
-              {/* Refill Logo */}
-              <circle cx="21" cy="21" r="18" fill="#006B5F" />
-              <path d="M15 15h12v12H15z" fill="white" rx="2" />
-              <path d="M18 18h6v2h-6zM18 21h4v2h-4z" fill="#006B5F" />
-
-              {/* Refill Text */}
-              <text
-                x="45"
-                y="18"
-                fill="#006B5F"
-                fontSize="16"
-                fontWeight="700"
-                fontFamily="Inter"
+          <div className="logo-wrapper">
+            {/* Circular R Icon */}
+            <div className="logo-icon">
+              <svg
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Refill
-              </text>
+                <circle cx="21" cy="21" r="21" fill="#6B73FF" />
+                <path
+                  d="M15.5 13h7.2c2.8 0 5.1 2.3 5.1 5.1 0 1.9-1 3.5-2.6 4.4l3.3 6.5h-3.8l-2.8-5.5h-3.4v5.5h-3v-15.5zm3 7h4.2c1.1 0 2.1-0.9 2.1-2.1s-0.9-2.1-2.1-2.1h-4.2v4.2z"
+                  fill="white"
+                />
+              </svg>
+            </div>
 
-              {/* Health Text */}
-              <text
-                x="45"
-                y="32"
-                fill="#00C7B2"
-                fontSize="14"
-                fontWeight="500"
-                fontFamily="Inter"
-              >
-                Health
-              </text>
-            </g>
-          </svg>
+            {/* Text Logo */}
+            <div className="logo-text-container">
+              <div className="logo-text-refill">Refill</div>
+              <div className="logo-text-health">Health</div>
+            </div>
+          </div>
         </div>
       </div>
 

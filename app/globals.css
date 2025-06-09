@@ -71,11 +71,51 @@ a {
   align-items: center;
 }
 
-.logo {
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   width: 119px;
   height: 42px;
-  aspect-ratio: 17/6;
-  position: relative;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.logo-text-refill {
+  color: #006b5f;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-text-health {
+  color: #00c7b2;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .nav-center {
