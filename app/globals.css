@@ -1760,9 +1760,9 @@ a {
   border-radius: 16px;
   background: #f7f9fa;
   height: calc(100vh - 100px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: relative;
+  position: sticky;
+  top: 100px;
+  right: 0;
   flex-shrink: 0;
 }
 
