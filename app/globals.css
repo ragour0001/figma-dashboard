@@ -333,6 +333,11 @@ a {
   align-items: center;
   gap: 24px;
   align-self: stretch;
+  transition: all 0.3s ease;
+}
+
+.sidebar-expanded .sidebar-footer {
+  align-items: flex-start;
 }
 
 .profile-avatar {
@@ -343,6 +348,13 @@ a {
   align-items: center;
   border-radius: 8px;
   background: #ebeff2;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-expanded .profile-avatar {
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .avatar-container {
@@ -350,10 +362,19 @@ a {
   width: 48px;
   padding: 12px;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 12px;
+  transition:
+    width 0.3s ease,
+    gap 0.3s ease;
+}
+
+.sidebar-expanded .avatar-container {
+  width: 100%;
+  gap: 12px;
+  justify-content: flex-start;
 }
 
 .profile-icon {
