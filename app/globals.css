@@ -1337,8 +1337,11 @@ a {
   gap: 22px;
   border-radius: 16px;
   background: #f7f9fa;
-  height: 100%;
+  height: calc(100vh - 100px);
   overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .profile-overview {
