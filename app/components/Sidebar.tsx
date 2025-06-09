@@ -1,11 +1,23 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Sidebar() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <aside className="sidebar">
+    <aside
+      className={`sidebar ${isExpanded ? "sidebar-expanded" : "sidebar-collapsed"}`}
+    >
       <div className="sidebar-content">
         <div className="sidebar-nav">
           <div className="nav-items">
-            {/* Home - Active */}
-            <div className="nav-item active">
+            {/* Home - Active - Toggle Button */}
+            <div className="nav-item active" onClick={toggleSidebar}>
               <div className="nav-item-inner">
                 <svg
                   className="nav-icon"
@@ -19,6 +31,7 @@ export default function Sidebar() {
                     fill="#006B5F"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Dashboard</span>}
               </div>
             </div>
 
