@@ -13,68 +13,136 @@ export default function Navbar() {
           >
             {/* Organic brain-like logo matching the provided image exactly */}
             <g>
-              {/* Back layer - lighter purple/gray organic petals */}
+              {/* Back layer - lighter purple/gray organic brain petals */}
               <path
-                d="M21 2C26 0 31 4 32 9C36 6 41 10 40 15C44 17 45 22 41 25C44 28 43 33 40 35C41 40 36 43 32 40C31 45 26 47 21 44C16 47 11 45 10 40C6 43 1 40 2 35C-1 33 -2 28 2 25C-1 22 0 17 4 15C3 10 7 6 10 9C11 4 16 0 21 2Z"
+                d="M21 1C27 -1 33 4 35 10C39 7 44 12 43 18C47 20 48 26 44 29C47 33 46 39 43 41C44 47 39 50 35 47C34 53 28 55 21 52C14 55 8 53 7 47C3 50 -2 47 -1 41C-4 39 -5 33 -1 29C-4 26 -3 20 1 18C0 12 4 7 7 10C8 4 14 -1 21 1Z"
                 fill="url(#outerGrayPurple)"
-                opacity="0.7"
+                opacity="0.6"
               />
 
               {/* Middle layer - teal/mint flowing organic shape */}
               <path
-                d="M21 4C25 2 29 5 30 10C33 7 37 11 36 15C39 17 40 21 37 23C40 26 39 30 36 32C37 36 33 39 30 37C29 41 25 43 21 41C17 43 13 41 12 37C9 39 5 36 6 32C3 30 2 26 5 23C2 21 3 17 6 15C5 11 9 7 12 10C13 5 17 2 21 4Z"
+                d="M21 3C26 1 31 5 32 11C36 8 40 13 39 18C42 20 43 25 40 28C43 31 42 36 39 38C40 43 36 46 32 44C31 48 26 50 21 47C16 50 11 48 10 44C6 46 2 43 3 38C0 36 -1 31 2 28C-1 25 0 20 3 18C2 13 6 8 10 11C11 5 16 1 21 3Z"
                 fill="url(#tealMintShape)"
-                opacity="0.85"
+                opacity="0.8"
               />
 
-              {/* Main central purple brain shape with R */}
+              {/* Main central purple brain shape */}
               <path
-                d="M21 6C24.5 4 28.5 7.5 29.5 12C31.5 9.5 35 13 34 17C36.5 18.5 37.5 22.5 34.5 25C37 27.5 36 31.5 33.5 33C34.5 36.5 31 39 28.5 37C27.5 40.5 23.5 42 21 39.5C18.5 42 14.5 40.5 13.5 37C11 39 7.5 36.5 8.5 33C6 31.5 5 27.5 7.5 25C4.5 22.5 5.5 18.5 8 17C7 13 10.5 9.5 12.5 12C13.5 7.5 17.5 4 21 6Z"
+                d="M21 5C25 3 29 7 30 12C33 9 37 13 36 17C38 19 39 23 36 25C39 28 38 32 35 34C36 38 32 41 29 39C28 43 24 45 21 42C18 45 14 43 13 39C10 41 6 38 7 34C4 32 3 28 6 25C3 23 4 19 7 17C6 13 10 9 13 12C14 7 18 3 21 5Z"
                 fill="url(#mainPurpleBrain)"
               />
 
-              {/* White R character integrated into the design */}
+              {/* Stylized R with internal line details */}
               <g fill="white">
-                <path d="M16.5 15H20.5C22 15 23.2 16.2 23.2 17.7C23.2 18.8 22.6 19.7 21.8 20.1L24 24H21.5L19.8 20.5H18.2V24H16.5V15Z" />
-                <path d="M18.2 18.8H20.3C20.8 18.8 21.2 18.4 21.2 17.9C21.2 17.4 20.8 17 20.3 17H18.2V18.8Z" />
+                {/* Main R shape */}
+                <path d="M15.5 14H20C21.7 14 23 15.3 23 17C23 18.2 22.3 19.2 21.3 19.6L23.5 24H21L19.2 20H17.5V24H15.5V14Z" />
+                <path d="M17.5 17.5H19.8C20.4 17.5 20.8 17.1 20.8 16.7C20.8 16.3 20.4 15.9 19.8 15.9H17.5V17.5Z" />
+
+                {/* Internal line details within the R */}
+                <rect
+                  x="16.2"
+                  y="15.2"
+                  width="2.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="16.2"
+                  width="2.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="18.2"
+                  width="1.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="19.2"
+                  width="1.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="20.5"
+                  width="1.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="21.5"
+                  width="1.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
+                <rect
+                  x="16.2"
+                  y="22.5"
+                  width="1.8"
+                  height="0.4"
+                  fill="white"
+                  opacity="0.8"
+                />
               </g>
 
               {/* Small decorative organic dots around the edges */}
               <ellipse
-                cx="33"
-                cy="12"
-                rx="2.5"
-                ry="2"
+                cx="34"
+                cy="10"
+                rx="2.2"
+                ry="1.8"
                 fill="#A7F3D0"
                 opacity="0.6"
-                transform="rotate(25 33 12)"
-              />
-              <ellipse
-                cx="8"
-                cy="28"
-                rx="2"
-                ry="2.5"
-                fill="#DDD6FE"
-                opacity="0.5"
-                transform="rotate(-15 8 28)"
-              />
-              <ellipse
-                cx="35"
-                cy="28"
-                rx="1.8"
-                ry="2.2"
-                fill="#93C5FD"
-                opacity="0.4"
-                transform="rotate(35 35 28)"
+                transform="rotate(25 34 10)"
               />
               <ellipse
                 cx="6"
-                cy="15"
-                rx="1.5"
+                cy="30"
+                rx="1.8"
+                ry="2.2"
+                fill="#DDD6FE"
+                opacity="0.5"
+                transform="rotate(-15 6 30)"
+              />
+              <ellipse
+                cx="36"
+                cy="30"
+                rx="1.6"
                 ry="2"
+                fill="#93C5FD"
+                opacity="0.4"
+                transform="rotate(35 36 30)"
+              />
+              <ellipse
+                cx="4"
+                cy="14"
+                rx="1.4"
+                ry="1.8"
                 fill="#C4B5FD"
                 opacity="0.5"
-                transform="rotate(-25 6 15)"
+                transform="rotate(-25 4 14)"
+              />
+              <ellipse
+                cx="32"
+                cy="38"
+                rx="1.5"
+                ry="1.2"
+                fill="#BFDBFE"
+                opacity="0.4"
+                transform="rotate(15 32 38)"
               />
             </g>
 
