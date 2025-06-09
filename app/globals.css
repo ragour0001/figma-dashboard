@@ -214,6 +214,22 @@ a {
   gap: 30px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
+  transition:
+    width 0.3s ease,
+    padding 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar-expanded {
+  width: 250px;
+  align-items: flex-start;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sidebar-collapsed {
+  width: 72px;
+  align-items: center;
 }
 
 .sidebar-content {
