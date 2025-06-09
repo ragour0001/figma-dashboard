@@ -1,113 +1,29 @@
 export default function RightSidebar() {
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "333px",
-        padding: "18px 20px",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "22px",
-        borderRadius: "16px",
-        background: "#F7F9FA",
-        position: "relative",
-      }}
-    >
+    <div className="figma-right-sidebar">
       {/* Profile Overview Header */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          alignSelf: "stretch",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            color: "#1F1F1F",
-            fontFamily: "DM Sans",
-            fontSize: "20px",
-            fontStyle: "normal",
-            fontWeight: "600",
-            lineHeight: "28px",
-            letterSpacing: "0.1px",
-            position: "relative",
-          }}
-        >
-          <span
-            style={{
-              fontFamily:
-                "DM Sans, -apple-system, Roboto, Helvetica, sans-serif",
-              fontWeight: "700",
-              fontSize: "20px",
-              color: "rgba(31,31,31,1)",
-            }}
+      <div className="figma-profile-header">
+        <div className="figma-profile-title">Profile Overview</div>
+        <div className="figma-more-options">
+          <svg
+            width="4"
+            height="16"
+            viewBox="0 0 4 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Profile Overview
-          </span>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: "24px",
-            height: "24px",
-            padding: "0px",
-            justifyContent: "center",
-            alignItems: "center",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              width: "20px",
-              height: "20px",
-              flexShrink: "0",
-              position: "relative",
-            }}
-          >
-            <svg
-              style={{
-                width: "3px",
-                height: "15px",
-                flexShrink: "0",
-                fill: "#1F1F1F",
-                position: "absolute",
-                left: "11px",
-                top: "5px",
-              }}
-              width="4"
-              height="16"
-              viewBox="0 0 4 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 0.5C1.3125 0.5 0.75 1.0625 0.75 1.75C0.75 2.4375 1.3125 3 2 3C2.6875 3 3.25 2.4375 3.25 1.75C3.25 1.0625 2.6875 0.5 2 0.5ZM2 13C1.3125 13 0.75 13.5625 0.75 14.25C0.75 14.9375 1.3125 15.5 2 15.5C2.6875 15.5 3.25 14.9375 3.25 14.25C3.25 13.5625 2.6875 13 2 13ZM2 6.75C1.3125 6.75 0.75 7.3125 0.75 8C0.75 8.6875 1.3125 9.25 2 9.25C2.6875 9.25 3.25 8.6875 3.25 8C3.25 7.3125 2.6875 6.75 2 6.75Z"
-                fill="#1F1F1F"
-              />
-            </svg>
-          </div>
+            <path
+              d="M2 0.5C1.3125 0.5 0.75 1.0625 0.75 1.75C0.75 2.4375 1.3125 3 2 3C2.6875 3 3.25 2.4375 3.25 1.75C3.25 1.0625 2.6875 0.5 2 0.5ZM2 13C1.3125 13 0.75 13.5625 0.75 14.25C0.75 14.9375 1.3125 15.5 2 15.5C2.6875 15.5 3.25 14.9375 3.25 14.25C3.25 13.5625 2.6875 13 2 13ZM2 6.75C1.3125 6.75 0.75 7.3125 0.75 8C0.75 8.6875 1.3125 9.25 2 9.25C2.6875 9.25 3.25 8.6875 3.25 8C3.25 7.3125 2.6875 6.75 2 6.75Z"
+              fill="#1F1F1F"
+            />
+          </svg>
         </div>
       </div>
 
       {/* Profile Content */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "16px",
-          alignSelf: "stretch",
-          position: "relative",
-        }}
-      >
+      <div className="figma-profile-content">
         <svg
-          style={{
-            width: "72px",
-            height: "72px",
-            position: "relative",
-          }}
+          className="figma-avatar"
           width="73"
           height="72"
           viewBox="0 0 73 72"
@@ -127,195 +43,26 @@ export default function RightSidebar() {
             </pattern>
           </defs>
         </svg>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "2px",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              width: "280px",
-              color: "#636363",
-              textAlign: "center",
-              fontFamily: "Inter",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: "600",
-              lineHeight: "20px",
-              letterSpacing: "0.07px",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "700",
-                fontSize: "14px",
-                color: "rgba(99,99,99,1)",
-              }}
-            >
-              Complete your Profile
-            </span>
-          </div>
-        </div>
+        <div className="figma-profile-text">Complete your Profile</div>
       </div>
 
       {/* Insights Card */}
-      <div
-        style={{
-          display: "flex",
-          width: "280px",
-          padding: "18px",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "10px",
-          borderRadius: "16px",
-          border: "1px solid #EBEFF2",
-          background: "#FFF",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-            alignSelf: "stretch",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              width: "50px",
-              height: "50px",
-              aspectRatio: "1/1",
-              position: "relative",
-              background: "#FFD700",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            🏆
-          </div>
-          <div
-            style={{
-              display: "flex",
-              width: "184px",
-              height: "50px",
-              flexDirection: "column",
-              justifyContent: "center",
-              color: "#003A5D",
-              fontFamily: "Inter",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: "600",
-              lineHeight: "135%",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "700",
-                fontSize: "14px",
-                color: "rgba(0,58,93,1)",
-              }}
-            >
-              Get your insights, just complete the assessment
-            </span>
+      <div className="figma-card">
+        <div className="figma-insights-content">
+          <div className="figma-award-icon">🏆</div>
+          <div className="figma-insights-text">
+            Get your insights, just complete the assessment
           </div>
         </div>
       </div>
 
       {/* Daily Streak */}
-      <div
-        style={{
-          display: "flex",
-          width: "280px",
-          padding: "18px",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "18px",
-          borderRadius: "16px",
-          border: "1px solid #EBEFF2",
-          background: "#FFF",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            width: "232px",
-            justifyContent: "space-between",
-            alignItems: "center",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              color: "#000",
-              fontFamily: "Inter",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: "500",
-              lineHeight: "normal",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "400",
-                fontSize: "14px",
-                color: "rgba(0,0,0,1)",
-              }}
-            >
-              Daily Streak
-            </span>
-          </div>
-          <div
-            style={{
-              color: "#006B5F",
-              fontFamily: "Inter",
-              fontSize: "12px",
-              fontStyle: "normal",
-              fontWeight: "600",
-              lineHeight: "normal",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "700",
-                fontSize: "12px",
-                color: "rgba(0,107,95,1)",
-              }}
-            >
-              See More
-            </span>
-          </div>
+      <div className="figma-card">
+        <div className="figma-streak-header">
+          <div className="figma-streak-title">Daily Streak</div>
+          <div className="figma-see-more">See More</div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            width: "218px",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "16px",
-            position: "relative",
-          }}
-        >
+        <div className="figma-streak-content">
           <div
             style={{
               display: "flex",
@@ -323,31 +70,10 @@ export default function RightSidebar() {
               alignItems: "center",
               gap: "10px",
               alignSelf: "stretch",
-              position: "relative",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                width: "52px",
-                height: "52px",
-                padding: "8px",
-                justifyContent: "space-between",
-                alignItems: "center",
-                aspectRatio: "1/1",
-                borderRadius: "100px",
-                background: "rgba(252, 214, 82, 0.40)",
-                position: "relative",
-              }}
-            >
+            <div className="figma-flame-container">
               <svg
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  flexShrink: "0",
-                  aspectRatio: "1/1",
-                  position: "relative",
-                }}
                 width="31"
                 height="30"
                 viewBox="0 0 31 30"
@@ -379,150 +105,29 @@ export default function RightSidebar() {
                 </defs>
               </svg>
             </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                color: "#232323",
-                textAlign: "center",
-                fontFamily: "Inter",
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "26px",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "700",
-                  fontSize: "18px",
-                  color: "rgba(35,35,35,1)",
-                }}
-              >
-                Your Streak
-              </span>
-            </div>
-            <div
-              style={{
-                alignSelf: "stretch",
-                color: "rgba(35, 35, 35, 0.70)",
-                textAlign: "center",
-                fontFamily: "Inter",
-                fontSize: "14px",
-                fontStyle: "normal",
-                fontWeight: "400",
-                lineHeight: "20px",
-                textTransform: "capitalize",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "400",
-                  fontSize: "14px",
-                  color: "rgba(35,35,35,0.699999988079071)",
-                }}
-              >
-                Complete the assessment, & do your activity
-              </span>
+            <div className="figma-streak-text">Your Streak</div>
+            <div className="figma-streak-description">
+              Complete the assessment, & do your activity
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              height: "40px",
-              padding: "0px 12px",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "center",
-              alignSelf: "stretch",
-              borderRadius: "12px",
-              background: "#006A63",
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                padding: "10px 16px",
-                alignItems: "center",
-                gap: "8px",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  color: "#FFF",
-                  fontFamily: "Inter",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                  lineHeight: "20px",
-                  letterSpacing: "0.1px",
-                  position: "relative",
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily:
-                      "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                    fontWeight: "700",
-                    fontSize: "12px",
-                    color: "rgba(255,255,255,1)",
-                  }}
-                >
-                  Complete Assessment
-                </span>
-              </div>
-            </div>
-          </div>
+          <button className="figma-button">
+            <span className="figma-button-text">Complete Assessment</span>
+          </button>
         </div>
       </div>
 
       {/* Welcome to Rewards */}
-      <div
-        style={{
-          display: "flex",
-          width: "280px",
-          padding: "24px",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "10px",
-          borderRadius: "16px",
-          border: "1px solid #EBEFF2",
-          background: "#FFF",
-          position: "relative",
-        }}
-      >
+      <div className="figma-card-large figma-card">
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             gap: "14px",
-            position: "relative",
           }}
         >
-          <div
-            style={{
-              width: "38px",
-              height: "43.429px",
-              position: "relative",
-            }}
-          >
+          <div className="figma-medal-icon">
             <svg
-              style={{
-                width: "38px",
-                height: "22px",
-                flexShrink: "0",
-                position: "absolute",
-                left: "0px",
-                top: "0px",
-              }}
               width="39"
               height="25"
               viewBox="0 0 39 25"
@@ -550,26 +155,8 @@ export default function RightSidebar() {
                 fill="#9B0F15"
               />
             </svg>
-            <div
-              style={{
-                width: "29px",
-                height: "29px",
-                flexShrink: "0",
-                position: "absolute",
-                left: "4px",
-                top: "14px",
-              }}
-            >
+            <div style={{ position: "absolute", left: "4px", top: "14px" }}>
               <svg
-                style={{
-                  width: "29px",
-                  height: "29px",
-                  flexShrink: "0",
-                  fill: "#BCCCD2",
-                  position: "absolute",
-                  left: "4px",
-                  top: "14px",
-                }}
                 width="31"
                 height="30"
                 viewBox="0 0 31 30"
@@ -591,292 +178,63 @@ export default function RightSidebar() {
               flexDirection: "column",
               alignItems: "center",
               gap: "7px",
-              position: "relative",
             }}
           >
-            <div
-              style={{
-                alignSelf: "stretch",
-                color: "#232323",
-                textAlign: "center",
-                fontFamily: "Inter",
-                fontSize: "20px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "26px",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "700",
-                  fontSize: "20px",
-                  color: "rgba(35,35,35,1)",
-                }}
-              >
-                Welcome to rewards
-              </span>
-            </div>
-            <div
-              style={{
-                width: "210px",
-                height: "35px",
-                flexShrink: "0",
-                color: "rgba(35, 35, 35, 0.70)",
-                textAlign: "center",
-                fontFamily: "Inter",
-                fontSize: "14px",
-                fontStyle: "normal",
-                fontWeight: "400",
-                lineHeight: "20px",
-                textTransform: "capitalize",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "400",
-                  fontSize: "14px",
-                  color: "rgba(35,35,35,0.699999988079071)",
-                }}
-              >
-                Use Reward Points for free session
-              </span>
+            <div className="figma-rewards-title">Welcome to rewards</div>
+            <div className="figma-rewards-subtitle">
+              Use Reward Points for free session
             </div>
           </div>
         </div>
 
         {/* Progress Bar */}
-        <div
-          style={{
-            width: "238px",
-            height: "35px",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              width: "232px",
-              height: "11px",
-              flexShrink: "0",
-              position: "absolute",
-              left: "0px",
-              top: "13px",
-            }}
-          >
-            <div
-              style={{
-                width: "232px",
-                height: "11px",
-                flexShrink: "0",
-                position: "absolute",
-                left: "0px",
-                top: "0px",
-              }}
+        <div className="figma-progress-container">
+          <div className="figma-progress-track"></div>
+          <div className="figma-progress-fill"></div>
+          <div className="figma-progress-medal">
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                style={{
-                  width: "232px",
-                  height: "11px",
-                  flexShrink: "0",
-                  borderRadius: "32px",
-                  border: "4px solid rgba(255, 255, 255, 0.20)",
-                  background: "#D9D1C2",
-                  position: "absolute",
-                  left: "0px",
-                  top: "0px",
-                }}
-              ></div>
-            </div>
-            <div
-              style={{
-                width: "158px",
-                height: "11px",
-                flexShrink: "0",
-                borderRadius: "32px",
-                background: "#006A63",
-                position: "absolute",
-                left: "0px",
-                top: "0px",
-              }}
-            ></div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              width: "35px",
-              height: "35px",
-              padding: "5px 8px",
-              alignItems: "center",
-              gap: "10px",
-              flexShrink: "0",
-              borderRadius: "17.5px",
-              border: "1px solid #EBEFF2",
-              background: "#FEFCF8",
-              position: "absolute",
-              left: "203px",
-              top: "0px",
-            }}
-          >
-            <div
-              style={{
-                width: "19px",
-                height: "21.714px",
-                flexShrink: "0",
-                position: "relative",
-              }}
-            >
-              <svg
-                style={{
-                  width: "15px",
-                  height: "15px",
-                  flexShrink: "0",
-                  position: "absolute",
-                  left: "2px",
-                  top: "7px",
-                }}
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.3286 8.46125C15.3286 12.5086 12.0475 15.7897 7.99998 15.7897C3.95251 15.7897 0.671387 12.5086 0.671387 8.46125C0.671387 4.41387 3.95251 1.13281 7.99998 1.13281C12.0475 1.13281 15.3286 4.41387 15.3286 8.46125Z"
-                  fill="#BCCCD2"
-                />
-              </svg>
-            </div>
+              <path
+                d="M15.3286 8.46125C15.3286 12.5086 12.0475 15.7897 7.99998 15.7897C3.95251 15.7897 0.671387 12.5086 0.671387 8.46125C0.671387 4.41387 3.95251 1.13281 7.99998 1.13281C12.0475 1.13281 15.3286 4.41387 15.3286 8.46125Z"
+                fill="#BCCCD2"
+              />
+            </svg>
           </div>
         </div>
 
         {/* Claim Reward Button */}
-        <div
-          style={{
-            display: "flex",
-            padding: "10px",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "10px",
-            alignSelf: "stretch",
-            borderRadius: "200px",
-            background: "#006A63",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              color: "#FFF",
-              textAlign: "center",
-              fontFamily: "Inter",
-              fontSize: "15px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "20px",
-              letterSpacing: "-0.24px",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "400",
-                fontSize: "15px",
-                color: "rgba(255,255,255,1)",
-              }}
-            >
-              Claim reward
-            </span>
-          </div>
-        </div>
+        <button className="figma-claim-button">
+          <span className="figma-claim-text">Claim reward</span>
+        </button>
       </div>
 
       {/* Upcoming Events */}
-      <div
-        style={{
-          display: "flex",
-          width: "280px",
-          padding: "24px",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          gap: "16px",
-          borderRadius: "16px",
-          border: "1px solid #EBEFF2",
-          background: "#FFF",
-          position: "relative",
-        }}
-      >
+      <div className="figma-card-large figma-card">
         <div
           style={{
             display: "flex",
-            padding: "0px",
             flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "flex-start",
             gap: "8px",
             alignSelf: "stretch",
-            borderRadius: "0px",
-            position: "relative",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              alignSelf: "stretch",
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                color: "#003A5D",
-                fontFamily: "Inter",
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "135%",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "700",
-                  fontSize: "18px",
-                  color: "rgba(0,58,93,1)",
-                }}
-              >
-                Upcoming Events
-              </span>
-            </div>
+          <div className="figma-events-header">
+            <div className="figma-events-title">Upcoming Events</div>
             <div
               style={{
                 display: "flex",
                 width: "24px",
                 height: "24px",
-                padding: "2px 3.636px 4px 4px",
                 justifyContent: "center",
                 alignItems: "center",
-                position: "relative",
               }}
             >
               <svg
-                style={{
-                  width: "16px",
-                  height: "18px",
-                  flexShrink: "0",
-                  position: "absolute",
-                  left: "212px",
-                  top: "2px",
-                }}
                 width="17"
                 height="19"
                 viewBox="0 0 17 19"
@@ -910,143 +268,20 @@ export default function RightSidebar() {
               </svg>
             </div>
           </div>
-          <div
-            style={{
-              width: "203px",
-              color: "#999",
-              fontFamily: "Inter",
-              fontSize: "12px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "135%",
-              position: "relative",
-            }}
-          >
-            <span
-              style={{
-                fontFamily:
-                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                fontWeight: "400",
-                fontSize: "12px",
-                color: "rgba(153,153,153,1)",
-              }}
-            >
-              12 Oct ,23
-            </span>
-          </div>
+          <div className="figma-events-date">12 Oct ,23</div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "40px",
-            padding: "0px 12px",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            alignSelf: "stretch",
-            borderRadius: "12px",
-            background: "#006A63",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              padding: "10px 16px",
-              alignItems: "center",
-              gap: "8px",
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                color: "#FFF",
-                fontFamily: "Inter",
-                fontSize: "12px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "20px",
-                letterSpacing: "0.1px",
-                position: "relative",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "rgba(255,255,255,1)",
-                }}
-              >
-                Complete Assessment
-              </span>
-            </div>
-          </div>
-        </div>
+        <button className="figma-button">
+          <span className="figma-button-text">Complete Assessment</span>
+        </button>
       </div>
 
       {/* Banner */}
-      <div
-        style={{
-          display: "flex",
-          width: "280px",
-          height: "200px",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "-37px",
-          borderRadius: "12px",
-          background: "#FFF",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            flex: "1 0 0",
-            alignSelf: "stretch",
-            borderRadius: "4px",
-            background: "#675252",
-            position: "relative",
-          }}
-        ></div>
-        <div
-          style={{
-            display: "flex",
-            padding: "11px 0px",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "8px",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              width: "16px",
-              height: "8px",
-              borderRadius: "8px",
-              background: "#FFF",
-              position: "relative",
-            }}
-          ></div>
-          <div
-            style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "8px",
-              background: "#D9D9D9",
-              position: "relative",
-            }}
-          ></div>
-          <div
-            style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "8px",
-              background: "#D9D9D9",
-              position: "relative",
-            }}
-          ></div>
+      <div className="figma-banner">
+        <div className="figma-banner-content"></div>
+        <div className="figma-banner-dots">
+          <div className="figma-dot active"></div>
+          <div className="figma-dot"></div>
+          <div className="figma-dot"></div>
         </div>
       </div>
     </div>
