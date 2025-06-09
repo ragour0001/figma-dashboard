@@ -61,26 +61,22 @@ a {
 .nav-left {
   display: flex;
   padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo-container {
+  display: flex;
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-text {
-  color: #006b5f;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.logo-subtext {
-  color: #006b5f;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
+.logo-image {
+  width: 119px;
+  height: 42px;
+  aspect-ratio: 17/6;
+  object-fit: contain;
+  position: relative;
 }
 
 .nav-center {
