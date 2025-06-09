@@ -11,87 +11,103 @@ export default function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             className="logo-image"
           >
-            {/* Background organic shapes */}
+            {/* Organic flowing background - recreating the beautiful hand-drawn style */}
             <g>
-              {/* Teal/green organic background shapes */}
+              {/* Back teal/mint flowing shapes */}
               <path
-                d="M8 18C5 12 10 8 16 10C20 6 26 10 24 16C30 18 28 24 22 24C24 30 18 32 14 28C8 30 6 24 8 18Z"
-                fill="#7DD3FC"
-                opacity="0.6"
-              />
-              <path
-                d="M32 12C38 8 44 14 40 20C46 22 44 28 38 26C40 32 34 36 30 32C24 34 22 28 26 26C20 24 22 18 28 20C26 14 30 12 32 12Z"
-                fill="#A7F3D0"
+                d="M2 20C0 14 4 8 12 10C16 4 24 6 26 14C32 12 38 18 34 24C38 28 32 34 26 32C28 38 22 42 16 38C10 40 4 34 6 28C2 26 0 22 2 20Z"
+                fill="url(#tealFlow)"
                 opacity="0.7"
               />
 
-              {/* Main purple organic shape */}
+              {/* Front purple flowing organic shape */}
               <path
-                d="M12 8C18 4 26 6 30 12C34 18 32 26 26 30C20 34 12 32 8 26C4 20 6 12 12 8Z"
-                fill="url(#mainGradient)"
+                d="M8 6C14 2 22 4 28 10C34 16 36 24 30 30C24 36 16 38 10 32C4 26 2 18 6 12C4 8 6 6 8 6Z"
+                fill="url(#purpleFlow)"
               />
 
-              {/* Central area for R */}
-              <circle cx="19" cy="19" r="11" fill="url(#purpleGradient)" />
-
-              {/* White R letter */}
+              {/* Central purple circle for R */}
               <path
-                d="M15 14h4.5c1.8 0 3 1.2 3 3 0 1-0.5 1.8-1.2 2.3l1.8 3.7h-2.1l-1.5-3h-2v3h-2.5V14zm2.5 4.5h2c0.6 0 1-0.4 1-1s-0.4-1-1-1h-2v2z"
+                d="M19 6C25 6 30 11 30 17C30 23 25 28 19 28C13 28 8 23 8 17C8 11 13 6 19 6Z"
+                fill="url(#centerPurple)"
+              />
+
+              {/* White R - more stylized */}
+              <path
+                d="M14.5 12h5c2 0 3.5 1.5 3.5 3.5c0 1.2-0.6 2.2-1.5 2.8l2 4.2h-2.8l-1.7-3.5h-1.5v3.5h-3V12zm3 5h2c0.8 0 1.5-0.7 1.5-1.5s-0.7-1.5-1.5-1.5h-2v3z"
                 fill="white"
               />
 
-              {/* Small accent shapes */}
+              {/* Accent organic dots */}
               <ellipse
-                cx="32"
+                cx="33"
                 cy="8"
-                rx="3"
-                ry="2"
-                fill="#C4B5FD"
-                opacity="0.5"
-              />
-              <ellipse
-                cx="6"
-                cy="32"
-                rx="2.5"
+                rx="4"
                 ry="3"
                 fill="#A7F3D0"
+                opacity="0.6"
+                transform="rotate(25 33 8)"
+              />
+              <ellipse
+                cx="5"
+                cy="34"
+                rx="3"
+                ry="4"
+                fill="#DDD6FE"
+                opacity="0.5"
+                transform="rotate(-15 5 34)"
+              />
+              <ellipse
+                cx="36"
+                cy="30"
+                rx="2.5"
+                ry="3.5"
+                fill="#7DD3FC"
                 opacity="0.4"
+                transform="rotate(45 36 30)"
               />
             </g>
 
-            {/* Text */}
+            {/* Typography */}
             <g>
               <text
-                x="42"
-                y="17"
+                x="44"
+                y="18"
                 fill="#6366F1"
-                fontSize="15"
+                fontSize="16"
                 fontWeight="700"
-                fontFamily="Inter, system-ui, sans-serif"
+                fontFamily="Inter"
               >
                 Refill
               </text>
               <text
-                x="42"
-                y="31"
+                x="44"
+                y="32"
                 fill="#059669"
-                fontSize="13"
+                fontSize="14"
                 fontWeight="600"
-                fontFamily="Inter, system-ui, sans-serif"
+                fontFamily="Inter"
               >
                 Health
               </text>
             </g>
 
             <defs>
-              <radialGradient id="mainGradient" cx="40%" cy="40%" r="80%">
-                <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="50%" stopColor="#7C3AED" />
+              <radialGradient id="tealFlow" cx="30%" cy="30%" r="90%">
+                <stop offset="0%" stopColor="#A7F3D0" />
+                <stop offset="50%" stopColor="#6EE7B7" />
+                <stop offset="100%" stopColor="#34D399" />
+              </radialGradient>
+
+              <radialGradient id="purpleFlow" cx="50%" cy="40%" r="85%">
+                <stop offset="0%" stopColor="#A78BFA" />
+                <stop offset="30%" stopColor="#8B5CF6" />
+                <stop offset="70%" stopColor="#7C3AED" />
                 <stop offset="100%" stopColor="#6366F1" />
               </radialGradient>
 
-              <radialGradient id="purpleGradient" cx="50%" cy="50%" r="60%">
-                <stop offset="0%" stopColor="#7C3AED" />
+              <radialGradient id="centerPurple" cx="50%" cy="45%" r="70%">
+                <stop offset="0%" stopColor="#8B5CF6" />
                 <stop offset="100%" stopColor="#6366F1" />
               </radialGradient>
             </defs>
