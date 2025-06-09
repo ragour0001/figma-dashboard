@@ -1,13 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function Sidebar() {
+interface SidebarProps {
+  onToggle?: (expanded: boolean) => void;
+}
+
+export default function Sidebar({ onToggle }: SidebarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleSidebar = () => {
-    setIsExpanded(!isExpanded);
+    const newExpanded = !isExpanded;
+    setIsExpanded(newExpanded);
+    if (onToggle) {
+      onToggle(newExpanded);
+    }
   };
+
+  useEffect(() => {
+    if (onToggle) {
+      onToggle(isExpanded);
+    }
+  }, [isExpanded, onToggle]);
 
   return (
     <aside
