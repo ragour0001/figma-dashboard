@@ -11,66 +11,74 @@ export default function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             className="logo-image"
           >
-            {/* Main brain-like organic shape */}
+            {/* Organic brain-like logo matching the provided image exactly */}
             <g>
-              {/* Outer lighter purple/gray petals */}
+              {/* Back layer - lighter purple/gray organic petals */}
               <path
-                d="M21 3C25 1 29 4 30 8C33 6 37 9 36 13C39 14 40 18 37 20C40 22 39 26 36 27C37 31 33 34 30 32C29 36 25 39 21 37C17 39 13 36 12 32C9 34 5 31 6 27C3 26 2 22 5 20C2 18 3 14 6 13C5 9 9 6 12 8C13 4 17 1 21 3Z"
-                fill="url(#lightPurplePetal)"
-                opacity="0.6"
-              />
-
-              {/* Main flowing teal shape - back layer */}
-              <path
-                d="M19 5C23 3 27 6 28 10C31 8 35 11 34 15C37 16 38 20 35 22C38 24 37 28 34 29C35 33 31 36 28 34C27 38 23 40 19 38C15 40 11 38 10 34C7 36 3 33 4 29C1 28 0 24 3 22C0 20 1 16 4 15C3 11 7 8 10 10C11 6 15 3 19 5Z"
-                fill="url(#tealShape)"
-                opacity="0.8"
-              />
-
-              {/* Central purple brain shape */}
-              <path
-                d="M21 7C24 5 28 8 29 12C31 10 34 13 33 16C35 17 36 20 34 22C36 24 35 27 33 28C34 31 31 33 29 32C28 35 24 37 21 35C18 37 14 35 13 32C11 33 8 31 9 28C7 27 6 24 8 22C6 20 7 17 9 16C8 13 11 10 13 12C14 8 18 5 21 7Z"
-                fill="url(#purpleBrain)"
-              />
-
-              {/* Inner organic details */}
-              <path
-                d="M17 11C19 10 21 12 21 14C22 13 24 14 23 16C24 16 24 18 23 18C24 19 23 20 22 20C23 21 22 22 21 21C21 23 19 24 17 23C15 24 13 23 13 21C12 22 11 21 12 20C11 20 10 19 11 18C10 18 10 16 11 16C10 14 12 13 13 14C13 12 15 10 17 11Z"
-                fill="url(#innerPurple)"
-                opacity="0.9"
-              />
-
-              {/* Small accent shapes */}
-              <ellipse
-                cx="25"
-                cy="15"
-                rx="2"
-                ry="1.5"
-                fill="#A7F3D0"
+                d="M21 2C26 0 31 4 32 9C36 6 41 10 40 15C44 17 45 22 41 25C44 28 43 33 40 35C41 40 36 43 32 40C31 45 26 47 21 44C16 47 11 45 10 40C6 43 1 40 2 35C-1 33 -2 28 2 25C-1 22 0 17 4 15C3 10 7 6 10 9C11 4 16 0 21 2Z"
+                fill="url(#outerGrayPurple)"
                 opacity="0.7"
-                transform="rotate(30 25 15)"
+              />
+
+              {/* Middle layer - teal/mint flowing organic shape */}
+              <path
+                d="M21 4C25 2 29 5 30 10C33 7 37 11 36 15C39 17 40 21 37 23C40 26 39 30 36 32C37 36 33 39 30 37C29 41 25 43 21 41C17 43 13 41 12 37C9 39 5 36 6 32C3 30 2 26 5 23C2 21 3 17 6 15C5 11 9 7 12 10C13 5 17 2 21 4Z"
+                fill="url(#tealMintShape)"
+                opacity="0.85"
+              />
+
+              {/* Main central purple brain shape with R */}
+              <path
+                d="M21 6C24.5 4 28.5 7.5 29.5 12C31.5 9.5 35 13 34 17C36.5 18.5 37.5 22.5 34.5 25C37 27.5 36 31.5 33.5 33C34.5 36.5 31 39 28.5 37C27.5 40.5 23.5 42 21 39.5C18.5 42 14.5 40.5 13.5 37C11 39 7.5 36.5 8.5 33C6 31.5 5 27.5 7.5 25C4.5 22.5 5.5 18.5 8 17C7 13 10.5 9.5 12.5 12C13.5 7.5 17.5 4 21 6Z"
+                fill="url(#mainPurpleBrain)"
+              />
+
+              {/* White R character integrated into the design */}
+              <g fill="white">
+                <path d="M16.5 15H20.5C22 15 23.2 16.2 23.2 17.7C23.2 18.8 22.6 19.7 21.8 20.1L24 24H21.5L19.8 20.5H18.2V24H16.5V15Z" />
+                <path d="M18.2 18.8H20.3C20.8 18.8 21.2 18.4 21.2 17.9C21.2 17.4 20.8 17 20.3 17H18.2V18.8Z" />
+              </g>
+
+              {/* Small decorative organic dots around the edges */}
+              <ellipse
+                cx="33"
+                cy="12"
+                rx="2.5"
+                ry="2"
+                fill="#A7F3D0"
+                opacity="0.6"
+                transform="rotate(25 33 12)"
               />
               <ellipse
-                cx="15"
-                cy="25"
+                cx="8"
+                cy="28"
+                rx="2"
+                ry="2.5"
+                fill="#DDD6FE"
+                opacity="0.5"
+                transform="rotate(-15 8 28)"
+              />
+              <ellipse
+                cx="35"
+                cy="28"
+                rx="1.8"
+                ry="2.2"
+                fill="#93C5FD"
+                opacity="0.4"
+                transform="rotate(35 35 28)"
+              />
+              <ellipse
+                cx="6"
+                cy="15"
                 rx="1.5"
                 ry="2"
-                fill="#DDD6FE"
-                opacity="0.6"
-                transform="rotate(-20 15 25)"
-              />
-              <ellipse
-                cx="26"
-                cy="25"
-                rx="1"
-                ry="1.5"
-                fill="#93C5FD"
+                fill="#C4B5FD"
                 opacity="0.5"
-                transform="rotate(45 26 25)"
+                transform="rotate(-25 6 15)"
               />
             </g>
 
-            {/* Typography - matching the image exactly */}
+            {/* Typography exactly matching the image */}
             <g>
               <text
                 x="46"
@@ -85,7 +93,7 @@ export default function Navbar() {
               <text
                 x="46"
                 y="35"
-                fill="#10B981"
+                fill="#059669"
                 fontSize="16"
                 fontWeight="600"
                 fontFamily="Inter, sans-serif"
@@ -95,29 +103,26 @@ export default function Navbar() {
             </g>
 
             <defs>
-              <radialGradient id="lightPurplePetal" cx="50%" cy="50%" r="80%">
-                <stop offset="0%" stopColor="#C4B5FD" />
-                <stop offset="50%" stopColor="#A78BFA" />
-                <stop offset="100%" stopColor="#8B5CF6" />
+              <radialGradient id="outerGrayPurple" cx="50%" cy="50%" r="85%">
+                <stop offset="0%" stopColor="#E0E7FF" />
+                <stop offset="30%" stopColor="#C4B5FD" />
+                <stop offset="70%" stopColor="#A78BFA" />
+                <stop offset="100%" stopColor="#9CA3AF" />
               </radialGradient>
 
-              <radialGradient id="tealShape" cx="40%" cy="40%" r="85%">
-                <stop offset="0%" stopColor="#A7F3D0" />
-                <stop offset="40%" stopColor="#6EE7B7" />
-                <stop offset="80%" stopColor="#34D399" />
-                <stop offset="100%" stopColor="#10B981" />
+              <radialGradient id="tealMintShape" cx="45%" cy="45%" r="80%">
+                <stop offset="0%" stopColor="#CCFBF1" />
+                <stop offset="30%" stopColor="#A7F3D0" />
+                <stop offset="60%" stopColor="#6EE7B7" />
+                <stop offset="100%" stopColor="#34D399" />
               </radialGradient>
 
-              <radialGradient id="purpleBrain" cx="50%" cy="45%" r="75%">
-                <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="30%" stopColor="#7C3AED" />
-                <stop offset="70%" stopColor="#6366F1" />
-                <stop offset="100%" stopColor="#4F46E5" />
-              </radialGradient>
-
-              <radialGradient id="innerPurple" cx="50%" cy="50%" r="70%">
+              <radialGradient id="mainPurpleBrain" cx="50%" cy="50%" r="75%">
                 <stop offset="0%" stopColor="#A78BFA" />
-                <stop offset="100%" stopColor="#7C3AED" />
+                <stop offset="25%" stopColor="#8B5CF6" />
+                <stop offset="50%" stopColor="#7C3AED" />
+                <stop offset="75%" stopColor="#6366F1" />
+                <stop offset="100%" stopColor="#4F46E5" />
               </radialGradient>
             </defs>
           </svg>
