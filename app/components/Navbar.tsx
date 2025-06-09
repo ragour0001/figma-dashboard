@@ -11,115 +11,89 @@ export default function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             className="logo-image"
           >
-            {/* Organic flowing background shapes */}
+            {/* Organic flower-like background */}
             <g>
-              {/* Main organic shape - teal/green */}
+              {/* Petal-like organic shapes */}
               <path
-                d="M8 15C12 8 20 6 28 12C32 15 35 20 32 28C28 35 20 38 12 32C6 28 4 20 8 15Z"
-                fill="url(#tealGradient)"
-                opacity="0.8"
+                d="M21 5C28 2 35 8 32 16C35 20 30 25 25 22C22 28 15 25 18 18C12 15 15 8 21 5Z"
+                fill="url(#tealPetal)"
+                opacity="0.7"
               />
-
-              {/* Secondary organic shape - purple */}
               <path
-                d="M15 8C22 3 32 5 38 13C42 18 41 25 35 30C28 36 18 35 12 28C8 22 9 14 15 8Z"
-                fill="url(#purpleGradient)"
-                opacity="0.9"
-              />
-
-              {/* Accent shapes */}
-              <ellipse
-                cx="35"
-                cy="12"
-                rx="6"
-                ry="4"
-                fill="url(#lightTeal)"
+                d="M21 37C14 40 7 34 10 26C7 22 12 17 17 20C20 14 27 17 24 24C30 27 27 34 21 37Z"
+                fill="url(#purplePetal)"
                 opacity="0.6"
               />
-              <ellipse
-                cx="8"
-                cy="25"
-                rx="4"
-                ry="6"
-                fill="url(#lightPurple)"
+              <path
+                d="M5 21C2 14 8 7 16 10C20 7 25 12 22 17C28 20 25 27 18 24C15 30 8 27 5 21Z"
+                fill="url(#lightTealPetal)"
                 opacity="0.5"
               />
-
-              {/* White R integrated into the design */}
               <path
-                d="M16 12h5c2.2 0 4 1.8 4 4 0 1.3-0.6 2.4-1.6 3.2l2.1 4.8h-2.8l-1.7-4h-2.5v4h-2.5V12zm2.5 6h2.5c0.8 0 1.5-0.7 1.5-1.5s-0.7-1.5-1.5-1.5h-2.5v3z"
+                d="M37 21C40 28 34 35 26 32C22 35 17 30 20 25C14 22 17 15 24 18C27 12 34 15 37 21Z"
+                fill="url(#lightPurplePetal)"
+                opacity="0.4"
+              />
+
+              {/* Central purple circle with R */}
+              <circle cx="21" cy="21" r="12" fill="url(#centralGradient)" />
+
+              {/* Stylized R */}
+              <path
+                d="M17 15h4.5c1.5 0 2.5 1 2.5 2.5s-1 2.5-2.5 2.5h-1.5l2.5 4h-2l-2-3.5h-1v3.5h-2V15zm2 3.5h2.5c0.3 0 0.5-0.2 0.5-0.5s-0.2-0.5-0.5-0.5H19v1z"
                 fill="white"
               />
             </g>
 
-            {/* Text elements */}
-            <text
-              x="45"
-              y="18"
-              fill="#6366F1"
-              fontSize="14"
-              fontWeight="600"
-              fontFamily="Inter"
-            >
-              Refill
-            </text>
-            <text
-              x="45"
-              y="32"
-              fill="#10B981"
-              fontSize="12"
-              fontWeight="500"
-              fontFamily="Inter"
-            >
-              Health
-            </text>
+            {/* Text */}
+            <g>
+              <text
+                x="46"
+                y="18"
+                fill="#6366F1"
+                fontSize="16"
+                fontWeight="700"
+                fontFamily="Inter"
+              >
+                Refill
+              </text>
+              <text
+                x="46"
+                y="32"
+                fill="#059669"
+                fontSize="14"
+                fontWeight="600"
+                fontFamily="Inter"
+              >
+                Health
+              </text>
+            </g>
 
             <defs>
-              <linearGradient
-                id="purpleGradient"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
+              <radialGradient id="centralGradient" cx="50%" cy="50%" r="50%">
                 <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="50%" stopColor="#7C3AED" />
                 <stop offset="100%" stopColor="#6366F1" />
-              </linearGradient>
+              </radialGradient>
 
-              <linearGradient
-                id="tealGradient"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
+              <radialGradient id="tealPetal" cx="50%" cy="50%" r="70%">
                 <stop offset="0%" stopColor="#6EE7B7" />
-                <stop offset="50%" stopColor="#34D399" />
-                <stop offset="100%" stopColor="#10B981" />
-              </linearGradient>
+                <stop offset="100%" stopColor="#34D399" />
+              </radialGradient>
 
-              <linearGradient
-                id="lightTeal"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
+              <radialGradient id="purplePetal" cx="50%" cy="50%" r="70%">
+                <stop offset="0%" stopColor="#C4B5FD" />
+                <stop offset="100%" stopColor="#8B5CF6" />
+              </radialGradient>
+
+              <radialGradient id="lightTealPetal" cx="50%" cy="50%" r="70%">
                 <stop offset="0%" stopColor="#A7F3D0" />
                 <stop offset="100%" stopColor="#6EE7B7" />
-              </linearGradient>
+              </radialGradient>
 
-              <linearGradient
-                id="lightPurple"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="#C4B5FD" />
-                <stop offset="100%" stopColor="#A78BFA" />
-              </linearGradient>
+              <radialGradient id="lightPurplePetal" cx="50%" cy="50%" r="70%">
+                <stop offset="0%" stopColor="#DDD6FE" />
+                <stop offset="100%" stopColor="#C4B5FD" />
+              </radialGradient>
             </defs>
           </svg>
         </div>
