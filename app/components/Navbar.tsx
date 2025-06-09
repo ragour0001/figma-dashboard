@@ -3,13 +3,125 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <img
-            src="/refill-health-logo.png"
-            alt="Refill Health Logo"
+          <svg
+            width="119"
+            height="42"
+            viewBox="0 0 119 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="logo-image"
-            width={119}
-            height={42}
-          />
+          >
+            {/* Organic flowing background shapes */}
+            <g>
+              {/* Main organic shape - teal/green */}
+              <path
+                d="M8 15C12 8 20 6 28 12C32 15 35 20 32 28C28 35 20 38 12 32C6 28 4 20 8 15Z"
+                fill="url(#tealGradient)"
+                opacity="0.8"
+              />
+
+              {/* Secondary organic shape - purple */}
+              <path
+                d="M15 8C22 3 32 5 38 13C42 18 41 25 35 30C28 36 18 35 12 28C8 22 9 14 15 8Z"
+                fill="url(#purpleGradient)"
+                opacity="0.9"
+              />
+
+              {/* Accent shapes */}
+              <ellipse
+                cx="35"
+                cy="12"
+                rx="6"
+                ry="4"
+                fill="url(#lightTeal)"
+                opacity="0.6"
+              />
+              <ellipse
+                cx="8"
+                cy="25"
+                rx="4"
+                ry="6"
+                fill="url(#lightPurple)"
+                opacity="0.5"
+              />
+
+              {/* White R integrated into the design */}
+              <path
+                d="M16 12h5c2.2 0 4 1.8 4 4 0 1.3-0.6 2.4-1.6 3.2l2.1 4.8h-2.8l-1.7-4h-2.5v4h-2.5V12zm2.5 6h2.5c0.8 0 1.5-0.7 1.5-1.5s-0.7-1.5-1.5-1.5h-2.5v3z"
+                fill="white"
+              />
+            </g>
+
+            {/* Text elements */}
+            <text
+              x="45"
+              y="18"
+              fill="#6366F1"
+              fontSize="14"
+              fontWeight="600"
+              fontFamily="Inter"
+            >
+              Refill
+            </text>
+            <text
+              x="45"
+              y="32"
+              fill="#10B981"
+              fontSize="12"
+              fontWeight="500"
+              fontFamily="Inter"
+            >
+              Health
+            </text>
+
+            <defs>
+              <linearGradient
+                id="purpleGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#8B5CF6" />
+                <stop offset="50%" stopColor="#7C3AED" />
+                <stop offset="100%" stopColor="#6366F1" />
+              </linearGradient>
+
+              <linearGradient
+                id="tealGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#6EE7B7" />
+                <stop offset="50%" stopColor="#34D399" />
+                <stop offset="100%" stopColor="#10B981" />
+              </linearGradient>
+
+              <linearGradient
+                id="lightTeal"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#A7F3D0" />
+                <stop offset="100%" stopColor="#6EE7B7" />
+              </linearGradient>
+
+              <linearGradient
+                id="lightPurple"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#C4B5FD" />
+                <stop offset="100%" stopColor="#A78BFA" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </div>
 
