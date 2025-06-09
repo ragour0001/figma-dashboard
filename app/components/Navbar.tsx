@@ -13,11 +13,30 @@ export default function Navbar() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx="21" cy="21" r="21" fill="#6B73FF" />
-                <path
-                  d="M15.5 13h7.2c2.8 0 5.1 2.3 5.1 5.1 0 1.9-1 3.5-2.6 4.4l3.3 6.5h-3.8l-2.8-5.5h-3.4v5.5h-3v-15.5zm3 7h4.2c1.1 0 2.1-0.9 2.1-2.1s-0.9-2.1-2.1-2.1h-4.2v4.2z"
+                <circle cx="21" cy="21" r="21" fill="url(#gradient)" />
+                <text
+                  x="21"
+                  y="28"
+                  textAnchor="middle"
                   fill="white"
-                />
+                  fontSize="20"
+                  fontWeight="700"
+                  fontFamily="Inter"
+                >
+                  R
+                </text>
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stopColor="#8B7CF6" />
+                    <stop offset="100%" stopColor="#6366F1" />
+                  </linearGradient>
+                </defs>
               </svg>
             </div>
 
