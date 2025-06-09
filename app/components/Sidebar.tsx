@@ -214,6 +214,7 @@ export default function Sidebar() {
                   fill="#006B5F"
                 />
               </svg>
+              {isExpanded && <span className="nav-label">Profile</span>}
             </div>
           </div>
         </div>
