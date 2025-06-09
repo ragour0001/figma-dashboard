@@ -621,32 +621,36 @@ a {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.08px;
+  padding-bottom: 10px;
 }
 
 .steps-container {
   display: flex;
   width: 588px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
 }
 
 .steps-visual {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  height: 100%;
 }
 
 .step-indicator {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 20px;
 }
 
 .step-circle {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: 1px solid #b8b1ff;
   background: #fff;
@@ -658,22 +662,29 @@ a {
 
 .step-line {
   width: 2px;
-  height: 30px;
+  height: 24px;
   background: #b8b1ff;
+  margin: 3px 0;
 }
 
 .steps-text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 42px;
+  margin-left: 8px;
+  padding-top: 0;
 }
 
 .step-item {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.09px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 20px;
 }
 
 .discover-btn {
@@ -853,6 +864,7 @@ a {
   gap: 10px;
   align-self: stretch;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .goal-chip {
@@ -892,9 +904,12 @@ a {
 
 .goal-chip span {
   color: #494949;
+  font-feature-settings: 'liga' off, 'clig' off;
   font-family: "Poppins";
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
+  line-height: normal;
   display: flex;
   align-items: center;
 }

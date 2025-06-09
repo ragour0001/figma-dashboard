@@ -32,6 +32,7 @@ export default function MainContent() {
           display: "flex",
           height: "306px",
           padding: "18px 16px",
+          marginBottom: "20px",
           flexDirection: "column",
           alignItems: "flex-start",
           gap: "12px",

@@ -22,27 +22,14 @@ export default function RightSidebar() {
 
       {/* Profile Content */}
       <div className="figma-profile-content">
-        <svg
+        <img
+          src="/assets/images/profile_image.svg"
+          alt="Profile"
+          width={73}
+          height={72}
+          style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }}
           className="figma-avatar"
-          width="73"
-          height="72"
-          viewBox="0 0 73 72"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="36.5" cy="36" r="36" fill="#D9D9D9" />
-          <circle cx="36.5" cy="36" r="36" fill="url(#pattern0_603_1289)" />
-          <defs>
-            <pattern
-              id="pattern0_603_1289"
-              patternContentUnits="objectBoundingBox"
-              width="1"
-              height="1"
-            >
-              <use xlinkHref="#image0_603_1289" transform="scale(0.00208333)" />
-            </pattern>
-          </defs>
-        </svg>
+        />
         <div className="figma-profile-text">Complete your Profile</div>
       </div>
 
