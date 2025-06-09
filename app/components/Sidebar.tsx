@@ -50,6 +50,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Target</span>}
               </div>
             </div>
 
@@ -68,6 +69,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Favorites</span>}
               </div>
             </div>
 
@@ -86,6 +88,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">AI Assistant</span>}
               </div>
             </div>
 
@@ -104,6 +107,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Analytics</span>}
               </div>
             </div>
 
@@ -122,6 +126,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Training</span>}
               </div>
             </div>
 
@@ -140,6 +145,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">News</span>}
               </div>
             </div>
 
@@ -160,6 +166,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Settings</span>}
               </div>
             </div>
 
@@ -178,6 +185,7 @@ export default function Sidebar() {
                     fill="#666666"
                   />
                 </svg>
+                {isExpanded && <span className="nav-label">Help</span>}
               </div>
             </div>
           </div>
