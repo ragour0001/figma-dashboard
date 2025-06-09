@@ -3,99 +3,13 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <svg
-            width="119"
-            height="42"
-            viewBox="0 0 119 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <img
+            src="/refill-health-logo.png"
+            alt="Refill Health Logo"
             className="logo-image"
-          >
-            {/* Organic flower-like background */}
-            <g>
-              {/* Petal-like organic shapes */}
-              <path
-                d="M21 5C28 2 35 8 32 16C35 20 30 25 25 22C22 28 15 25 18 18C12 15 15 8 21 5Z"
-                fill="url(#tealPetal)"
-                opacity="0.7"
-              />
-              <path
-                d="M21 37C14 40 7 34 10 26C7 22 12 17 17 20C20 14 27 17 24 24C30 27 27 34 21 37Z"
-                fill="url(#purplePetal)"
-                opacity="0.6"
-              />
-              <path
-                d="M5 21C2 14 8 7 16 10C20 7 25 12 22 17C28 20 25 27 18 24C15 30 8 27 5 21Z"
-                fill="url(#lightTealPetal)"
-                opacity="0.5"
-              />
-              <path
-                d="M37 21C40 28 34 35 26 32C22 35 17 30 20 25C14 22 17 15 24 18C27 12 34 15 37 21Z"
-                fill="url(#lightPurplePetal)"
-                opacity="0.4"
-              />
-
-              {/* Central purple circle with R */}
-              <circle cx="21" cy="21" r="12" fill="url(#centralGradient)" />
-
-              {/* Stylized R */}
-              <path
-                d="M17 15h4.5c1.5 0 2.5 1 2.5 2.5s-1 2.5-2.5 2.5h-1.5l2.5 4h-2l-2-3.5h-1v3.5h-2V15zm2 3.5h2.5c0.3 0 0.5-0.2 0.5-0.5s-0.2-0.5-0.5-0.5H19v1z"
-                fill="white"
-              />
-            </g>
-
-            {/* Text */}
-            <g>
-              <text
-                x="46"
-                y="18"
-                fill="#6366F1"
-                fontSize="16"
-                fontWeight="700"
-                fontFamily="Inter"
-              >
-                Refill
-              </text>
-              <text
-                x="46"
-                y="32"
-                fill="#059669"
-                fontSize="14"
-                fontWeight="600"
-                fontFamily="Inter"
-              >
-                Health
-              </text>
-            </g>
-
-            <defs>
-              <radialGradient id="centralGradient" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="100%" stopColor="#6366F1" />
-              </radialGradient>
-
-              <radialGradient id="tealPetal" cx="50%" cy="50%" r="70%">
-                <stop offset="0%" stopColor="#6EE7B7" />
-                <stop offset="100%" stopColor="#34D399" />
-              </radialGradient>
-
-              <radialGradient id="purplePetal" cx="50%" cy="50%" r="70%">
-                <stop offset="0%" stopColor="#C4B5FD" />
-                <stop offset="100%" stopColor="#8B5CF6" />
-              </radialGradient>
-
-              <radialGradient id="lightTealPetal" cx="50%" cy="50%" r="70%">
-                <stop offset="0%" stopColor="#A7F3D0" />
-                <stop offset="100%" stopColor="#6EE7B7" />
-              </radialGradient>
-
-              <radialGradient id="lightPurplePetal" cx="50%" cy="50%" r="70%">
-                <stop offset="0%" stopColor="#DDD6FE" />
-                <stop offset="100%" stopColor="#C4B5FD" />
-              </radialGradient>
-            </defs>
-          </svg>
+            width={119}
+            height={42}
+          />
         </div>
       </div>
 
