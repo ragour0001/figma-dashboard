@@ -265,7 +265,13 @@ a {
   align-items: flex-start;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition:
+    background-color 0.2s,
+    width 0.3s ease;
+}
+
+.sidebar-expanded .nav-item {
+  width: 100%;
 }
 
 .nav-item.active {
@@ -281,10 +287,37 @@ a {
   width: 48px;
   padding: 12px;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 12px;
+  transition:
+    width 0.3s ease,
+    gap 0.3s ease;
+}
+
+.sidebar-expanded .nav-item-inner {
+  width: 100%;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.nav-label {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.sidebar-expanded .nav-label {
+  opacity: 1;
+}
+
+.sidebar-expanded .nav-item.active .nav-label {
+  color: #006b5f;
+  font-weight: 600;
 }
 
 .nav-icon {
