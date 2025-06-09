@@ -1760,12 +1760,12 @@ a {
 }
 
 /* Dynamic main content adjustment for sidebar expansion */
-.dashboard-content:has(.sidebar-expanded) .main-content {
+.sidebar-expanded-layout .main-content {
   max-width: calc(100vw - 250px - 333px);
 }
 
 @media (max-width: 1200px) {
-  .dashboard-content:has(.sidebar-expanded) .main-content {
+  .sidebar-expanded-layout .main-content {
     max-width: calc(100vw - 250px - 280px);
   }
 }
