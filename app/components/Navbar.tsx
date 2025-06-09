@@ -4,11 +4,16 @@ export default function Navbar() {
       <div className="nav-left">
         <div className="logo-container">
           <img
+            layer-name="image 623"
+            style={{
+              width: "119px",
+              height: "42px",
+              aspectRatio: "17/6",
+              position: "relative",
+            }}
             src="/assets/images/refill-health-logo.png"
             alt="Refill Health Logo"
             className="logo-image"
-            width={119}
-            height={42}
           />
         </div>
       </div>
