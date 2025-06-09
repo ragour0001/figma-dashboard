@@ -33,69 +33,86 @@ export default function Navbar() {
                 fill="url(#mainPurpleBrain)"
               />
 
-              {/* Stylized R with internal line details */}
+              {/* Stylized R with document-style internal lines */}
               <g fill="white">
-                {/* Main R shape */}
-                <path d="M15.5 14H20C21.7 14 23 15.3 23 17C23 18.2 22.3 19.2 21.3 19.6L23.5 24H21L19.2 20H17.5V24H15.5V14Z" />
-                <path d="M17.5 17.5H19.8C20.4 17.5 20.8 17.1 20.8 16.7C20.8 16.3 20.4 15.9 19.8 15.9H17.5V17.5Z" />
+                {/* Main R outline */}
+                <path d="M15 14H20.5C22.2 14 23.5 15.3 23.5 17C23.5 18.3 22.7 19.4 21.6 19.8L24 25H21.3L19.4 20.2H17.2V25H15V14Z" />
+                <path d="M17.2 17.8H20C20.7 17.8 21.2 17.3 21.2 16.8C21.2 16.3 20.7 15.8 20 15.8H17.2V17.8Z" />
 
-                {/* Internal line details within the R */}
-                <rect
-                  x="16.2"
-                  y="15.2"
-                  width="2.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="16.2"
-                  width="2.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="18.2"
-                  width="1.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="19.2"
-                  width="1.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="20.5"
-                  width="1.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="21.5"
-                  width="1.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
-                <rect
-                  x="16.2"
-                  y="22.5"
-                  width="1.8"
-                  height="0.4"
-                  fill="white"
-                  opacity="0.8"
-                />
+                {/* Document-style horizontal lines inside the R */}
+                <g opacity="0.9">
+                  <rect
+                    x="15.8"
+                    y="15.2"
+                    width="3.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect x="15.8" y="16" width="3.2" height="0.3" fill="white" />
+                  <rect
+                    x="15.8"
+                    y="16.8"
+                    width="2.8"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="18.5"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="19.3"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="20.1"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="20.9"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="21.7"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="22.5"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="23.3"
+                    width="2.2"
+                    height="0.3"
+                    fill="white"
+                  />
+                  <rect
+                    x="15.8"
+                    y="24.1"
+                    width="1.8"
+                    height="0.3"
+                    fill="white"
+                  />
+                </g>
               </g>
 
               {/* Small decorative organic dots around the edges */}
