@@ -392,6 +392,8 @@ a {
   overflow-y: auto;
   max-width: calc(100vw - 72px - 333px);
   transition: max-width 0.3s ease;
+  min-height: 0;
+  height: calc(100vh - 100px);
 }
 
 .welcome-section {
