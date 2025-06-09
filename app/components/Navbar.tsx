@@ -3,13 +3,99 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <div className="logo-container">
-          <img
-            src="/refill-health-logo.png"
-            alt="Refill Health Logo"
+          <svg
+            width="119"
+            height="42"
+            viewBox="0 0 119 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="logo-image"
-            width={119}
-            height={42}
-          />
+          >
+            {/* Background organic shapes */}
+            <g>
+              {/* Teal/green organic background shapes */}
+              <path
+                d="M8 18C5 12 10 8 16 10C20 6 26 10 24 16C30 18 28 24 22 24C24 30 18 32 14 28C8 30 6 24 8 18Z"
+                fill="#7DD3FC"
+                opacity="0.6"
+              />
+              <path
+                d="M32 12C38 8 44 14 40 20C46 22 44 28 38 26C40 32 34 36 30 32C24 34 22 28 26 26C20 24 22 18 28 20C26 14 30 12 32 12Z"
+                fill="#A7F3D0"
+                opacity="0.7"
+              />
+
+              {/* Main purple organic shape */}
+              <path
+                d="M12 8C18 4 26 6 30 12C34 18 32 26 26 30C20 34 12 32 8 26C4 20 6 12 12 8Z"
+                fill="url(#mainGradient)"
+              />
+
+              {/* Central area for R */}
+              <circle cx="19" cy="19" r="11" fill="url(#purpleGradient)" />
+
+              {/* White R letter */}
+              <path
+                d="M15 14h4.5c1.8 0 3 1.2 3 3 0 1-0.5 1.8-1.2 2.3l1.8 3.7h-2.1l-1.5-3h-2v3h-2.5V14zm2.5 4.5h2c0.6 0 1-0.4 1-1s-0.4-1-1-1h-2v2z"
+                fill="white"
+              />
+
+              {/* Small accent shapes */}
+              <ellipse
+                cx="32"
+                cy="8"
+                rx="3"
+                ry="2"
+                fill="#C4B5FD"
+                opacity="0.5"
+              />
+              <ellipse
+                cx="6"
+                cy="32"
+                rx="2.5"
+                ry="3"
+                fill="#A7F3D0"
+                opacity="0.4"
+              />
+            </g>
+
+            {/* Text */}
+            <g>
+              <text
+                x="42"
+                y="17"
+                fill="#6366F1"
+                fontSize="15"
+                fontWeight="700"
+                fontFamily="Inter, system-ui, sans-serif"
+              >
+                Refill
+              </text>
+              <text
+                x="42"
+                y="31"
+                fill="#059669"
+                fontSize="13"
+                fontWeight="600"
+                fontFamily="Inter, system-ui, sans-serif"
+              >
+                Health
+              </text>
+            </g>
+
+            <defs>
+              <radialGradient id="mainGradient" cx="40%" cy="40%" r="80%">
+                <stop offset="0%" stopColor="#8B5CF6" />
+                <stop offset="50%" stopColor="#7C3AED" />
+                <stop offset="100%" stopColor="#6366F1" />
+              </radialGradient>
+
+              <radialGradient id="purpleGradient" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stopColor="#7C3AED" />
+                <stop offset="100%" stopColor="#6366F1" />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </div>
 
