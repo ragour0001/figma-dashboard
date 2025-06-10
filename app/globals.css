@@ -2231,9 +2231,10 @@ a {
 .goals-assessment-page {
   flex: 1;
   padding: 30px 40px;
-  max-width: calc(100vw - 72px);
+  max-width: 100%;
   transition: max-width 0.3s ease;
   overflow-y: auto;
+  width: 100%;
 }
 
 /* Assessment Section */
