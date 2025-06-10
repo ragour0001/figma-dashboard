@@ -2983,10 +2983,12 @@ a {
 
 .therapist-text {
   display: flex;
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   align-items: flex-start;
   gap: 2px;
   flex-direction: column;
+  flex: 1;
 }
 
 .therapist-title {
