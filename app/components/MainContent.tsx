@@ -833,7 +833,13 @@ export default function MainContent() {
 
         <div className="care-plan-grid">
           <div className="care-card card-1">
-            <div className="card-placeholder"></div>
+            <div className="card-content">
+              <h3>Create ambient awareness through different senses</h3>
+              <div className="card-decorations">
+                <div className="decoration-circles"></div>
+                <div className="decoration-elements"></div>
+              </div>
+            </div>
           </div>
           <div className="care-card card-2">
             <div className="card-content">

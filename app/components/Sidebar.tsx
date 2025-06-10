@@ -45,7 +45,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#006B5F"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Dashboard</span>}
+                {isExpanded && <span className="nav-label">Home</span>}
               </div>
             </div>
 
@@ -64,7 +64,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Target</span>}
+                {isExpanded && <span className="nav-label">Goals & Assessment</span>}
               </div>
             </div>
 
@@ -83,7 +83,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Favorites</span>}
+                {isExpanded && <span className="nav-label">My Care Plan</span>}
               </div>
             </div>
 
@@ -102,7 +102,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">AI Assistant</span>}
+                {isExpanded && <span className="nav-label">Therapist/Coach</span>}
               </div>
             </div>
 
@@ -121,7 +121,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Analytics</span>}
+                {isExpanded && <span className="nav-label">Progress</span>}
               </div>
             </div>
 
@@ -140,7 +140,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Training</span>}
+                {isExpanded && <span className="nav-label">Micro Learnings</span>}
               </div>
             </div>
 
@@ -159,7 +159,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">News</span>}
+                {isExpanded && <span className="nav-label">Resources</span>}
               </div>
             </div>
 
@@ -199,7 +199,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Help</span>}
+                {isExpanded && <span className="nav-label">Need Help</span>}
               </div>
             </div>
           </div>
