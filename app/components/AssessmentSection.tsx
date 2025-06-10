@@ -91,8 +91,16 @@ export default function AssessmentSection({
           </div>
 
           <div className="assessment-actions">
-            <button className="dashboard-btn">Take Me to Dashboard</button>
-            <button className="previous-btn">Previous Question</button>
+            <button className="dashboard-btn">
+              <div className="btn-content">
+                <span className="btn-text">Take Me to Dashboard</span>
+              </div>
+            </button>
+            <button className="previous-btn">
+              <div className="btn-content">
+                <span className="btn-text">Previous Question</span>
+              </div>
+            </button>
           </div>
         </div>
       </div>

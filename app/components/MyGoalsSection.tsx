@@ -42,7 +42,9 @@ export default function MyGoalsSection() {
           </div>
           <div className="reset-goals-container">
             <button className="reset-goals-btn" disabled>
-              Reset Goals
+              <div className="btn-content">
+                <span className="btn-text">Reset Goals</span>
+              </div>
             </button>
             <p className="reset-goals-text">
               You can Reset your Goals after 14 Days
