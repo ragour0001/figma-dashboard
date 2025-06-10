@@ -2243,13 +2243,26 @@ a {
 @media (max-width: 768px) {
   .dashboard-content {
     flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .sidebar {
+    position: fixed;
+    top: 80px;
     width: 100%;
-    height: auto;
+    height: 60px;
     flex-direction: row;
     padding: 10px 20px;
+    z-index: 900;
   }
 
   .sidebar-nav {
@@ -2261,20 +2274,20 @@ a {
   }
 
   .main-content {
+    margin-left: 0;
+    margin-top: 60px;
     max-width: 100%;
     padding: 20px;
+    height: calc(100vh - 140px);
   }
 
   .right-sidebar {
+    position: relative;
+    top: auto;
+    right: auto;
     width: 100%;
     height: auto;
-  }
-
-  .navbar {
-    padding: 10px 20px;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-top: 20px;
   }
 
   .search-container {
