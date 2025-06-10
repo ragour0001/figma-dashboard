@@ -2617,7 +2617,8 @@ a {
 
 .goals-status-container {
   display: flex;
-  width: 927px;
+  width: 100%;
+  max-width: 927px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
