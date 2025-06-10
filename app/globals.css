@@ -2240,7 +2240,8 @@ a {
 /* Assessment Section */
 .assessment-section {
   display: flex;
-  width: 929px;
+  width: 100%;
+  max-width: 929px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
