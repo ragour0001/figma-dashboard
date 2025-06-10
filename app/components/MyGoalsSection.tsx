@@ -35,20 +35,22 @@ export default function MyGoalsSection() {
 
       <div className="goals-status-container">
         <div className="goals-status-header">
-          <div className="goals-status-info">
-            <h3 className="goals-status-title">
-              Yayyyy,, Your Goal has been Set
-            </h3>
-          </div>
-          <div className="reset-goals-container">
-            <button className="reset-goals-btn" disabled>
-              <div className="btn-content">
-                <span className="btn-text">Reset Goals</span>
-              </div>
-            </button>
-            <p className="reset-goals-text">
-              You can Reset your Goals after 14 Days
-            </p>
+          <div>
+            <div className="goals-status-info">
+              <h3 className="goals-status-title">
+                Yayyyy,, Your Goal has been Set
+              </h3>
+            </div>
+            <div className="reset-goals-container">
+              <button className="reset-goals-btn" disabled>
+                <div className="btn-content">
+                  <span className="btn-text">Reset Goals</span>
+                </div>
+              </button>
+              <p className="reset-goals-text">
+                You can Reset your Goals after 14 Days
+              </p>
+            </div>
           </div>
         </div>
 
