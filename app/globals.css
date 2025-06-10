@@ -2229,11 +2229,13 @@ a {
 
 /* Dynamic main content adjustment for sidebar expansion */
 .sidebar-expanded-layout .main-content {
+  margin-left: 250px;
   max-width: calc(100vw - 250px - 333px);
 }
 
 @media (max-width: 1200px) {
   .sidebar-expanded-layout .main-content {
+    margin-left: 250px;
     max-width: calc(100vw - 250px - 280px);
   }
 }
