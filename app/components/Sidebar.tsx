@@ -24,8 +24,17 @@ export default function Sidebar({
   };
 
   const handleSectionClick = (section: string) => {
-    if (onSectionChange) {
-      onSectionChange(section);
+    if (section === "home") {
+      // For Home tab, toggle sidebar instead of switching sections
+      toggleSidebar();
+      if (onSectionChange) {
+        onSectionChange("home");
+      }
+    } else {
+      // For other tabs, switch sections
+      if (onSectionChange) {
+        onSectionChange(section);
+      }
     }
   };
 
