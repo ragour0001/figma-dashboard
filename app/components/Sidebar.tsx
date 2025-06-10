@@ -4,9 +4,15 @@ import { useState, useEffect } from "react";
 
 interface SidebarProps {
   onToggle?: (expanded: boolean) => void;
+  activeSection?: string;
+  onSectionChange?: (section: string) => void;
 }
 
-export default function Sidebar({ onToggle }: SidebarProps) {
+export default function Sidebar({
+  onToggle,
+  activeSection = "home",
+  onSectionChange,
+}: SidebarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleSidebar = () => {
@@ -14,6 +20,12 @@ export default function Sidebar({ onToggle }: SidebarProps) {
     setIsExpanded(newExpanded);
     if (onToggle) {
       onToggle(newExpanded);
+    }
+  };
+
+  const handleSectionClick = (section: string) => {
+    if (onSectionChange) {
+      onSectionChange(section);
     }
   };
 
@@ -30,8 +42,11 @@ export default function Sidebar({ onToggle }: SidebarProps) {
       <div className="sidebar-content">
         <div className="sidebar-nav">
           <div className="nav-items">
-            {/* Home - Active - Toggle Button */}
-            <div className="nav-item active" onClick={toggleSidebar}>
+            {/* Home */}
+            <div
+              className={`nav-item ${activeSection === "home" ? "active" : ""}`}
+              onClick={() => handleSectionClick("home")}
+            >
               <div className="nav-item-inner">
                 <svg
                   className="nav-icon"
@@ -42,15 +57,18 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                 >
                   <path
                     d="M15.5692 6.78153L8.9025 0.365188C8.89924 0.362288 8.89618 0.359164 8.89333 0.355838C8.64788 0.128131 8.32802 0.00195313 7.99625 0.00195312C7.66448 0.00195313 7.34462 0.128131 7.09917 0.355838L7.09 0.365188L0.430833 6.78153C0.294998 6.90895 0.18657 7.06374 0.11241 7.23611C0.0382493 7.40848 -2.80357e-05 7.59468 1.54065e-08 7.78292V15.6418C1.54065e-08 16.0026 0.140476 16.3485 0.390524 16.6036C0.640573 16.8587 0.979711 17.002 1.33333 17.002H5.33333C5.68696 17.002 6.02609 16.8587 6.27614 16.6036C6.52619 16.3485 6.66667 16.0026 6.66667 15.6418V11.5615H9.33333V15.6418C9.33333 16.0026 9.47381 16.3485 9.72386 16.6036C9.97391 16.8587 10.313 17.002 10.6667 17.002H14.6667C15.0203 17.002 15.3594 16.8587 15.6095 16.6036C15.8595 16.3485 16 16.0026 16 15.6418V7.78292C16 7.59468 15.9618 7.40848 15.8876 7.23611C15.8134 7.06374 15.705 6.90895 15.5692 6.78153ZM14.6667 15.6418H10.6667V11.5615C10.6667 11.2008 10.5262 10.8548 10.2761 10.5997C10.0261 10.3447 9.68696 10.2014 9.33333 10.2014H6.66667C6.31305 10.2014 5.97391 10.3447 5.72386 10.5997C5.47381 10.8548 5.33333 11.2008 5.33333 11.5615V15.6418H1.33333V7.78292L1.3425 7.77442L8 1.36062L14.6583 7.77272L14.6675 7.78122L14.6667 15.6418Z"
-                    fill="#006B5F"
+                    fill={activeSection === "home" ? "#006B5F" : "#666666"}
                   />
                 </svg>
                 {isExpanded && <span className="nav-label">Home</span>}
               </div>
             </div>
 
-            {/* Target Icon */}
-            <div className="nav-item">
+            {/* Goals & Assessment */}
+            <div
+              className={`nav-item ${activeSection === "goals-assessment" ? "active" : ""}`}
+              onClick={() => handleSectionClick("goals-assessment")}
+            >
               <div className="nav-item-inner">
                 <svg
                   className="nav-icon"
@@ -61,10 +79,16 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                 >
                   <path
                     d="M10.0017 19.5C8.68775 19.5 7.45267 19.2507 6.2965 18.752C5.14033 18.2533 4.13467 17.5766 3.2795 16.7218C2.42433 15.8669 1.74725 14.8617 1.24825 13.706C0.749417 12.5503 0.5 11.3156 0.5 10.0017C0.5 8.68775 0.749333 7.45267 1.248 6.2965C1.74667 5.14033 2.42342 4.13467 3.27825 3.2795C4.13308 2.42433 5.13833 1.74725 6.294 1.24825C7.44967 0.749417 8.68442 0.5 9.99825 0.5C11.3123 0.5 12.5473 0.749333 13.7035 1.248C14.8597 1.74667 15.8653 2.42342 16.7205 3.27825C17.5757 4.13308 18.2528 5.13833 18.7518 6.294C19.2506 7.44967 19.5 8.68442 19.5 9.99825C19.5 11.3123 19.2507 12.5473 18.752 13.7035C18.2533 14.8597 17.5766 15.8653 16.7218 16.7205C15.8669 17.5757 14.8617 18.2528 13.706 18.7518C12.5503 19.2506 11.3156 19.5 10.0017 19.5ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18ZM10.0022 15.5C8.47508 15.5 7.17625 14.9655 6.10575 13.8965C5.03525 12.8275 4.5 11.5294 4.5 10.0022C4.5 8.47508 5.0345 7.17625 6.1035 6.10575C7.1725 5.03525 8.47058 4.5 9.99775 4.5C11.5249 4.5 12.8238 5.0345 13.8943 6.1035C14.9648 7.1725 15.5 8.47058 15.5 9.99775C15.5 11.5249 14.9655 12.8238 13.8965 13.8943C12.8275 14.9648 11.5294 15.5 10.0022 15.5ZM10 14C11.1 14 12.0417 13.6083 12.825 12.825C13.6083 12.0417 14 11.1 14 10C14 8.9 13.6083 7.95833 12.825 7.175C12.0417 6.39167 11.1 6 10 6C8.9 6 7.95833 6.39167 7.175 7.175C6.39167 7.95833 6 8.9 6 10C6 11.1 6.39167 12.0417 7.175 12.825C7.95833 13.6083 8.9 14 10 14ZM10 11.5C9.591 11.5 9.23875 11.3523 8.94325 11.0568C8.64775 10.7613 8.5 10.409 8.5 10C8.5 9.591 8.64775 9.23875 8.94325 8.94325C9.23875 8.64775 9.591 8.5 10 8.5C10.409 8.5 10.7613 8.64775 11.0568 8.94325C11.3523 9.23875 11.5 9.591 11.5 10C11.5 10.409 11.3523 10.7613 11.0568 11.0568C10.7613 11.3523 10.409 11.5 10 11.5Z"
-                    fill="#666666"
+                    fill={
+                      activeSection === "goals-assessment"
+                        ? "#006B5F"
+                        : "#666666"
+                    }
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Goals & Assessment</span>}
+                {isExpanded && (
+                  <span className="nav-label">Goals & Assessment</span>
+                )}
               </div>
             </div>
 
@@ -102,7 +126,9 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Therapist/Coach</span>}
+                {isExpanded && (
+                  <span className="nav-label">Therapist/Coach</span>
+                )}
               </div>
             </div>
 
@@ -140,7 +166,9 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                     fill="#666666"
                   />
                 </svg>
-                {isExpanded && <span className="nav-label">Micro Learnings</span>}
+                {isExpanded && (
+                  <span className="nav-label">Micro Learnings</span>
+                )}
               </div>
             </div>
 

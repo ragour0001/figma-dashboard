@@ -5,12 +5,27 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
+import GoalsAssessment from "./components/GoalsAssessment";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleSidebarToggle = (expanded: boolean) => {
     setIsSidebarExpanded(expanded);
+  };
+
+  const handleSectionChange = (section: string) => {
+    setActiveSection(section);
+  };
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case "goals-assessment":
+        return <GoalsAssessment />;
+      default:
+        return <MainContent />;
+    }
   };
 
   return (
@@ -19,10 +34,14 @@ export default function Home() {
       <div
         className={`dashboard-content ${isSidebarExpanded ? "sidebar-expanded-layout" : ""}`}
       >
-        <Sidebar onToggle={handleSidebarToggle} />
+        <Sidebar
+          onToggle={handleSidebarToggle}
+          activeSection={activeSection}
+          onSectionChange={handleSectionChange}
+        />
         <div className="content-wrapper">
-          <MainContent />
-          <RightSidebar />
+          {renderContent()}
+          {activeSection === "home" && <RightSidebar />}
         </div>
       </div>
     </div>
