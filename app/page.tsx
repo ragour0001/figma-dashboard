@@ -20,8 +20,10 @@ export default function Home() {
         className={`dashboard-content ${isSidebarExpanded ? "sidebar-expanded-layout" : ""}`}
       >
         <Sidebar onToggle={handleSidebarToggle} />
-        <MainContent />
-        <RightSidebar />
+        <div className="content-wrapper">
+          <MainContent />
+          <RightSidebar />
+        </div>
       </div>
     </div>
   );
