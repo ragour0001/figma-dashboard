@@ -1801,7 +1801,7 @@ a {
   border-radius: 16px;
   background: #f7f9fa;
   height: auto;
-  min-height: calc(100vh - 100px);
+  min-height: 18px;
   position: relative;
   flex-shrink: 0;
 }
