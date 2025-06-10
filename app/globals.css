@@ -48,6 +48,17 @@ a {
   overflow: hidden;
 }
 
+/* Scrollable content wrapper for main content and right sidebar */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  margin-left: 72px;
+  transition: margin-left 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
