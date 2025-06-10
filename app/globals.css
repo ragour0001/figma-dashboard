@@ -3073,7 +3073,7 @@ a {
   }
 
   .goals-assessment-page {
-    max-width: calc(100vw - 72px - 280px);
+    max-width: 100%;
   }
 }
 
