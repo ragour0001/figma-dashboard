@@ -21,6 +21,21 @@ export default function GoalCard({
         <div className="goal-info">
           <div className="goal-emoji-container">
             <div className="goal-emoji-circle">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="16.7833"
+                  cy="17.168"
+                  rx="16.7833"
+                  ry="16.5"
+                  fill="white"
+                />
+              </svg>
               <span className="goal-emoji">{emoji}</span>
             </div>
           </div>
