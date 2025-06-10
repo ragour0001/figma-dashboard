@@ -1376,7 +1376,7 @@ a {
   border-radius: 16px;
   background: #f7f9fa;
   height: auto;
-  min-height: calc(100vh - 100px);
+  min-height: 18px;
   overflow-y: visible;
   overflow-x: hidden;
   position: relative;
