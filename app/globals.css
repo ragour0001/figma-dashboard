@@ -398,14 +398,8 @@ a {
 .main-content {
   flex: 1;
   padding: 30px 40px;
-  margin-left: 72px;
   max-width: calc(100vw - 72px - 333px);
-  transition:
-    max-width 0.3s ease,
-    margin-left 0.3s ease;
-  height: calc(100vh - 100px);
-  overflow-y: auto;
-  overflow-x: hidden;
+  transition: max-width 0.3s ease;
 }
 
 .welcome-section {
