@@ -43,6 +43,7 @@ a {
 .dashboard-content {
   display: flex;
   flex: 1;
+  margin-top: 100px; /* Account for fixed navbar height */
 }
 
 /* Navbar Styles */
@@ -55,6 +56,11 @@ a {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .nav-left {
@@ -904,7 +910,9 @@ a {
 
 .goal-chip span {
   color: #494949;
-  font-feature-settings: 'liga' off, 'clig' off;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
   font-family: "Poppins";
   font-size: 16px;
   font-style: normal;
