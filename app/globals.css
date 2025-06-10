@@ -2250,6 +2250,7 @@ a {
   .dashboard-content {
     flex-direction: column;
     margin-top: 80px;
+    height: calc(100vh - 80px);
   }
 
   .navbar {
@@ -2279,21 +2280,23 @@ a {
     flex-direction: row;
   }
 
-  .main-content {
+  .content-wrapper {
+    flex-direction: column;
     margin-left: 0;
     margin-top: 60px;
-    max-width: 100%;
-    padding: 20px;
     height: calc(100vh - 140px);
   }
 
+  .main-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+
   .right-sidebar {
-    position: relative;
-    top: auto;
-    right: auto;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    min-height: auto;
   }
 
   .search-container {
