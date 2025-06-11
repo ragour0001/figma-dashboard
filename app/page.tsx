@@ -7,6 +7,7 @@ import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
 import GoalsAssessment from "./components/GoalsAssessment";
 import MyCarePlan from "./components/MyCarePlan";
+import TherapistCoach from "./components/TherapistCoach";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -26,6 +27,8 @@ export default function Home() {
         return <GoalsAssessment />;
       case "my-care-plan":
         return <MyCarePlan />;
+      case "therapist-coach":
+        return <TherapistCoach />;
       default:
         return <MainContent />;
     }
