@@ -809,6 +809,190 @@ a {
   background: #005951;
 }
 
+/* Thank You Modal Styles */
+.thank-you-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.thank-you-modal {
+  display: flex;
+  width: 527px;
+  height: 670px;
+  padding: 52px 22px;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  border-radius: 14px 14px 15px 15px;
+  background: #fff;
+  position: relative;
+  box-shadow:
+    0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.thank-you-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.thank-you-close-button:hover {
+  background: #f3f4f6;
+}
+
+.thank-you-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  width: 100%;
+}
+
+.thank-you-illustration {
+  width: 482.029px;
+  height: 337.28px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-illustration svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.thank-you-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.thank-you-title {
+  width: 403.331px;
+  height: 89.941px;
+  flex-shrink: 0;
+  color: #00201c;
+  text-align: center;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-subtitle {
+  display: flex;
+  width: 392.088px;
+  height: 44.971px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #00201c;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Responsive styles for Thank You Modal */
+@media (max-width: 768px) {
+  .thank-you-modal {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    max-height: 80vh;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .thank-you-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .thank-you-title {
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .thank-you-subtitle {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-modal {
+    width: 95%;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+
+  .thank-you-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .thank-you-subtitle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .thank-you-illustration {
+    max-width: 300px;
+  }
+}
+
 /* Dashboard Layout */
 .dashboard-layout {
   display: flex;
