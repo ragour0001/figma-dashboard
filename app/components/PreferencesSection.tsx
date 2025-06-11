@@ -33,13 +33,7 @@ export default function PreferencesSection() {
               </p>
             </div>
           </div>
-          <button className="start-now-btn">
-            <div className="btn-content">
-              <div className="btn-text">
-                <span className="btn-label">Start Now</span>
-              </div>
-            </div>
-          </button>
+          <button className="start-now-btn">Start Now</button>
         </div>
       </div>
     </div>

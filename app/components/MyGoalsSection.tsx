@@ -9,7 +9,7 @@ export default function MyGoalsSection() {
       title: "Manage stress",
       color: "#EDFFEF",
       lockColor: "#006B5F",
-      isLocked: false,
+      isLocked: true,
     },
     {
       emoji: "💤",

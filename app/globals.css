@@ -36,7 +36,7 @@ a {
 /* Need Help Page Styles */
 .need-help-page {
   flex: 1;
-  padding: 18px 0px;
+  padding: 18px 40px;
   background: #fff;
   overflow-y: auto;
 }
@@ -1128,19 +1128,12 @@ a {
   margin: 0;
 }
 
-/* Search Section */
-.search-section {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  align-self: stretch;
-}
-
 .search-input-container {
   display: flex;
   height: 44px;
+  width: 950px;
   flex: 1 0 0;
-  padding: 8px 16px 8px 12px;
+  /* padding: 8px 16px 8px 12px; */
   align-items: center;
   gap: 12px;
   border-radius: 8px;
@@ -2255,10 +2248,10 @@ a {
     font-size: 20px;
   }
 
-  .search-section {
+  /* .search-section {
     flex-direction: column;
     gap: 16px;
-  }
+  } */
 
   .search-button {
     width: 100%;
@@ -3144,6 +3137,7 @@ a {
   background: white;
   border-radius: 50%;
 }
+
 
 .goal-chip span {
   color: #494949;
@@ -5014,7 +5008,7 @@ a {
   height: 33px;
 }
 
-.goal-emoji {
+/* .goal-emoji {
   color: #000;
   font-feature-settings:
     "liga" off,
@@ -5034,7 +5028,7 @@ a {
   top: 4px;
   width: 24px;
   height: 24px;
-}
+} */
 
 .goal-title {
   align-self: stretch;
@@ -5273,7 +5267,7 @@ a {
 
 .start-now-btn .btn-text {
   display: flex;
-  padding: 16px 24px;
+  padding: 16px 5px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -5690,7 +5684,7 @@ a {
   align-items: center;
   border-radius: 16px;
   background: #006a63;
-  padding: 16px 24px;
+  padding: 16px 5px;
   border: none;
   cursor: pointer;
   color: #fff;

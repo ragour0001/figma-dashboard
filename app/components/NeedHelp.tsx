@@ -17,7 +17,6 @@ export default function NeedHelp() {
         </div>
 
         {/* Search Section */}
-        <div className="search-section">
           <div className="search-input-container">
             <div className="search-input-wrapper">
               <svg
@@ -45,8 +44,7 @@ export default function NeedHelp() {
                 placeholder="Search .."
                 className="search-input"
               />
-            </div>
-            <div className="ai-assistant-button">
+              <div className="ai-assistant-button">
               <div className="ai-button-content">
                 <svg
                   className="ai-icon"
@@ -63,8 +61,9 @@ export default function NeedHelp() {
                 <span>Ask Refill Assistant</span>
               </div>
             </div>
-          </div>
-        </div>
+            </div>
+            
+          </div>        
 
         {/* Contact Cards Section */}
         <div className="contact-cards-section">

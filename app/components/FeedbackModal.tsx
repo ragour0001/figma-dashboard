@@ -82,15 +82,14 @@ export default function FeedbackModal({ onClose }: FeedbackModalProps) {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
-        </div>
-
-        <div className="feedback-actions">
+          <div className="feedback-actions">
           <button className="skip-button" onClick={onClose}>
             Skip
           </button>
           <button className="submit-button" onClick={handleSubmit}>
             Submit
           </button>
+        </div>
         </div>
 
         <ThankYouModal isOpen={showThankYou} onClose={handleThankYouClose} />
