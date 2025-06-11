@@ -24,6 +24,8 @@ export default function Home() {
     switch (activeSection) {
       case "goals-assessment":
         return <GoalsAssessment />;
+      case "my-care-plan":
+        return <MyCarePlan />;
       default:
         return <MainContent />;
     }
