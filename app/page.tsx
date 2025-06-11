@@ -11,6 +11,7 @@ import TherapistCoach from "./components/TherapistCoach";
 import Progress from "./components/Progress";
 import MicroLearnings from "./components/MicroLearnings";
 import Resources from "./components/Resources";
+import Settings from "./components/Settings";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -38,6 +39,8 @@ export default function Home() {
         return <MicroLearnings />;
       case "resources":
         return <Resources />;
+      case "settings":
+        return <Settings />;
       default:
         return <MainContent />;
     }
