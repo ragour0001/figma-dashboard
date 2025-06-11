@@ -700,7 +700,7 @@ a {
   position: relative;
 }
 
-.avatar {
+/* .avatar {
   display: flex;
   width: 48px;
   height: 48px;
@@ -712,7 +712,7 @@ a {
   border: 1.5px solid #fff;
   position: absolute;
   background: #ddd;
-}
+} */
 
 .avatar-1 {
   left: 0px;
@@ -1189,8 +1189,6 @@ a {
   cursor: pointer;
   color: #fff;
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
   font-family:
     Inter,
     -apple-system,
@@ -1318,22 +1316,18 @@ a {
 }
 
 .filter-tag span {
+  color: #666;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
-  color: #006b5f;
-  text-overflow: ellipsis;
-  font-family:
-    Inter,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 /* Resources Grid */
@@ -2405,8 +2399,9 @@ a {
 
 .profile-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
 }
 
 .avatar {
@@ -2459,11 +2454,11 @@ a {
   transition:
     width 0.3s ease,
     padding 0.3s ease;
-  overflow: hidden;
   position: fixed;
   top: 100px;
   left: 0;
   z-index: 900;
+  overflow-y: auto; /* Changed from hidden to auto */
 }
 
 .sidebar-expanded {
@@ -2492,7 +2487,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex: 1 0 0;
+  flex-grow: 1; /* Changed from flex: 1 0 0 */
   align-self: stretch;
 }
 
@@ -2580,6 +2575,7 @@ a {
   gap: 24px;
   align-self: stretch;
   transition: all 0.3s ease;
+  margin-top: auto; /* Added to push it to the bottom */
 }
 
 .sidebar-expanded .sidebar-footer {
@@ -3391,11 +3387,20 @@ a {
   background: #32aaff;
 }
 
+
 .card-content {
   position: absolute;
-  bottom: 26px;
+  bottom: 5px;
   left: 26px;
   right: 26px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  /* background: #fff; */
+  border-radius: 0 0 8px 8px;
 }
 
 .card-content h3 {
@@ -8592,16 +8597,7 @@ a {
   line-height: normal;
 }
 
-.card-content {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-  background: #fff;
-  border-radius: 0 0 8px 8px;
-}
+
 
 .therapist-profile {
   display: flex;

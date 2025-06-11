@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface SidebarProps {
   onToggle?: (expanded: boolean) => void;
@@ -231,20 +232,16 @@ export default function Sidebar({
               onClick={() => handleSectionClick("settings")}
             >
               <div className="nav-item-inner">
-                <svg
+                <Image
+                  src="/assets/images/Settings_icon.svg"
+                  alt="Settings"
+                  width={24}
+                  height={24}
                   className="nav-icon"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M9 7.5C8.17157 7.5 7.5 8.17157 7.5 9C7.5 9.82843 8.17157 10.5 9 10.5C9.82843 10.5 10.5 9.82843 10.5 9C10.5 8.17157 9.82843 7.5 9 7.5ZM6 9C6 7.34315 7.34315 6 9 6C10.6569 6 12 7.34315 12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9Z"
-                    fill={activeSection === "settings" ? "#006B5F" : "#666666"}
-                  />
-                </svg>
+                  style={{
+                    filter: activeSection === "settings" ? "brightness(0) saturate(100%) invert(24%) sepia(98%) saturate(1024%) hue-rotate(130deg) brightness(94%) contrast(101%)" : "brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(86%)"
+                  }}
+                />
                 {isExpanded && <span className="nav-label">Settings</span>}
               </div>
             </div>
