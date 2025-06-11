@@ -33,6 +33,8 @@ export default function Home() {
         return <TherapistCoach />;
       case "progress":
         return <Progress />;
+      case "micro-learnings":
+        return <MicroLearnings />;
       default:
         return <MainContent />;
     }
