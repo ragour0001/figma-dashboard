@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
 import GoalsAssessment from "./components/GoalsAssessment";
+import MyCarePlan from "./components/MyCarePlan";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
