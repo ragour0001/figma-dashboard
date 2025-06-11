@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ThankYouModal from "./ThankYouModal";
 
 interface FeedbackModalProps {
   onClose: () => void;
@@ -9,6 +10,16 @@ interface FeedbackModalProps {
 export default function FeedbackModal({ onClose }: FeedbackModalProps) {
   const [selectedRating, setSelectedRating] = useState("excellent");
   const [comment, setComment] = useState("");
+  const [showThankYou, setShowThankYou] = useState(false);
+
+  const handleSubmit = () => {
+    setShowThankYou(true);
+  };
+
+  const handleThankYouClose = () => {
+    setShowThankYou(false);
+    onClose();
+  };
 
   const ratings = [
     { id: "excellent", label: "🔥 Excellent", active: true },
@@ -74,9 +85,15 @@ export default function FeedbackModal({ onClose }: FeedbackModalProps) {
         </div>
 
         <div className="feedback-actions">
-          <button className="skip-button">Skip</button>
-          <button className="submit-button">Submit</button>
+          <button className="skip-button" onClick={onClose}>
+            Skip
+          </button>
+          <button className="submit-button" onClick={handleSubmit}>
+            Submit
+          </button>
         </div>
+
+        <ThankYouModal isOpen={showThankYou} onClose={handleThankYouClose} />
       </div>
     </div>
   );
