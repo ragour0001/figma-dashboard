@@ -6,6 +6,13 @@ import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
 import GoalsAssessment from "./components/GoalsAssessment";
+import MyCarePlan from "./components/MyCarePlan";
+import TherapistCoach from "./components/TherapistCoach";
+import Progress from "./components/Progress";
+import MicroLearnings from "./components/MicroLearnings";
+import Resources from "./components/Resources";
+import Settings from "./components/Settings";
+import NeedHelp from "./components/NeedHelp";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -23,6 +30,20 @@ export default function Home() {
     switch (activeSection) {
       case "goals-assessment":
         return <GoalsAssessment />;
+      case "my-care-plan":
+        return <MyCarePlan />;
+      case "therapist-coach":
+        return <TherapistCoach />;
+      case "progress":
+        return <Progress />;
+      case "micro-learnings":
+        return <MicroLearnings />;
+      case "resources":
+        return <Resources />;
+      case "settings":
+        return <Settings />;
+      case "need-help":
+        return <NeedHelp />;
       default:
         return <MainContent />;
     }
