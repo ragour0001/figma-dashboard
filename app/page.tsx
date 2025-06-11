@@ -8,6 +8,7 @@ import RightSidebar from "./components/RightSidebar";
 import GoalsAssessment from "./components/GoalsAssessment";
 import MyCarePlan from "./components/MyCarePlan";
 import TherapistCoach from "./components/TherapistCoach";
+import Progress from "./components/Progress";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
