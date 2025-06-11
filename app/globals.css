@@ -3156,3 +3156,1296 @@ a {
     margin-top: 10px;
   }
 }
+
+/* My Care Plan Styles */
+.my-care-plan {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.my-care-plan-content {
+  display: flex;
+  width: 1123px;
+  max-width: calc(100% - 80px);
+  padding: 40px 0 0 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+/* Progress Banner Styles */
+.progress-banner {
+  display: flex;
+  height: 216px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  align-self: stretch;
+  border-radius: 16px;
+}
+
+.progress-banner-content {
+  display: flex;
+  padding: 26px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #e94545;
+  background: #fff6f6;
+}
+
+.progress-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.rocket-icon {
+  width: 24px;
+  height: 24px;
+  fill: #006b5f;
+}
+
+.progress-banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.progress-banner-text h2 {
+  align-self: stretch;
+  color: #006b5f;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0;
+}
+
+.progress-section {
+  display: flex;
+  height: 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+
+.progress-indicator {
+  display: flex;
+  padding-right: 252px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 64px;
+  background: #e0e0e0;
+  position: relative;
+  height: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-fill {
+  width: 48px;
+  height: 20px;
+  background: #da1e28;
+  border-radius: 10px;
+}
+
+.progress-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.progress-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a8a8a8;
+  position: absolute;
+}
+
+.progress-dot:nth-child(1) {
+  left: 39px;
+  background: #edf5ff;
+}
+
+.progress-dot:nth-child(2) {
+  left: 179px;
+}
+
+.progress-dot:nth-child(3) {
+  left: 345px;
+}
+
+.progress-dot:nth-child(4) {
+  left: 588px;
+}
+
+.progress-title {
+  align-self: stretch;
+  color: #232323;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.progress-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.faq-link {
+  color: #006b5f;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.complete-assessment-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #eff5f3;
+  box-shadow:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.complete-assessment-btn span {
+  color: #006a63;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+/* Therapist Matching Card Styles */
+.therapist-matching-card {
+  display: flex;
+  padding: 26px 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #e9efec;
+}
+
+.therapist-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 26px;
+  align-self: stretch;
+}
+
+.therapist-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.therapist-card-header > div:first-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.brain-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.therapist-card-text {
+  display: flex;
+  width: 750px;
+  align-items: flex-start;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.therapist-card-text h3 {
+  color: #06201c;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.therapist-card-text p {
+  color: #06201c;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.start-now-btn {
+  display: flex;
+  width: 123px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #006a63;
+  padding: 16px 24px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+/* Care Plan Section Styles */
+.care-plan-section {
+  display: flex;
+  height: 356px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.care-plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.care-plan-header > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.care-plan-header h2 {
+  color: #003a5d;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 135%;
+  margin: 0;
+}
+
+.care-plan-header p {
+  color: #171d1b;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+  max-width: 600px;
+}
+
+.care-plan-cards-grid {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.care-plan-card {
+  width: 486px;
+  height: 229px;
+  border-radius: 16px;
+  border: 1px solid #e5e7e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.locked-card {
+  background: #101340;
+}
+
+.referral-card {
+  background: #ff7e1d;
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.abstract-shapes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shape-circle {
+  position: absolute;
+  top: -19px;
+  right: -10px;
+  width: 88px;
+  height: 80px;
+  background: #7047a3;
+  border-radius: 50%;
+}
+
+.shape-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(90deg, #3c197f 0%, #5630a7 100%);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4.75px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.lock-icon-container {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.lock-icon {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+.locked-content {
+  display: flex;
+  width: 346px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.locked-content h3 {
+  color: #f4fbf8;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+
+.locked-content p {
+  width: 328px;
+  color: #f4fbf8;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.complete-assessment-card-btn {
+  display: flex;
+  width: 232px;
+  height: 40px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  color: #00201c;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+  right: 26px;
+}
+
+.card-title h4 {
+  width: 389px;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  margin: 0;
+}
+
+.card-title.orange h4 {
+  color: #fff;
+}
+
+/* Referral Card Specific Styles */
+.referral-header {
+  display: flex;
+  width: 431px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 16px 0 16px;
+  height: 76px;
+}
+
+.referral-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.referral-label {
+  color: #fff;
+  font-family:
+    Lato,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.referral-text h3 {
+  width: 268px;
+  color: #fff;
+  font-family:
+    Lato,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+}
+
+.referral-avatar {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.referral-code-section {
+  display: flex;
+  width: 431px;
+  height: 75px;
+  padding: 12px 12px 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f1f6fb;
+  position: absolute;
+  bottom: 133px;
+  left: 16px;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.copy-label {
+  color: #000;
+  font-family:
+    Lato,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  opacity: 0.5;
+}
+
+.code-display {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.code-text {
+  color: #000;
+  font-family:
+    Lato,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.share-invite-btn {
+  display: flex;
+  padding: 10px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #404040;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family:
+    Lato,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Mobile App Showcase Styles */
+.mobile-app-showcase {
+  height: 350px;
+  align-self: stretch;
+  position: relative;
+  border-radius: 10px;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+.showcase-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.gradient-shape {
+  position: absolute;
+  width: 408px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.gradient-1 {
+  left: 0;
+  background: linear-gradient(180deg, #e3e3e3 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.gradient-2 {
+  left: 97px;
+  background: linear-gradient(180deg, #d1d1d1 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.gradient-3 {
+  left: 225px;
+  background: linear-gradient(180deg, #cac7c7 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.gradient-4 {
+  left: 379px;
+  background: linear-gradient(180deg, #bfbfbf 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.showcase-content {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  padding: 56px 28px;
+  height: 100%;
+  align-items: center;
+  gap: 40px;
+}
+
+.showcase-text {
+  display: flex;
+  width: 415px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.new-platform-label {
+  color: #5742a9;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.showcase-text h2 {
+  width: 427px;
+  color: #232323;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0;
+}
+
+.download-section {
+  display: flex;
+  height: 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.download-label {
+  color: #232323;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.app-store-buttons {
+  display: flex;
+  width: 267px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.app-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-store-btn.apple {
+  width: 118px;
+  height: 39px;
+}
+
+.app-store-btn.google {
+  width: 132px;
+  height: 39px;
+}
+
+.store-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.apple-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z'/%3E%3C/svg%3E");
+}
+
+.google-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z'/%3E%3C/svg%3E");
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.download-text {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.store-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.showcase-phones {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.phone-mockup {
+  width: 226px;
+  height: 483px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #333 0%, #000 100%);
+  padding: 4px;
+  position: relative;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.phone-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.phone-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.status-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.signal-icon,
+.wifi-icon,
+.battery-icon {
+  width: 12px;
+  height: 8px;
+  background: #000;
+  border-radius: 1px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #006b5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-initial {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app-title h4 {
+  color: #242e49;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.app-title p {
+  color: #6c5ce7;
+  font-size: 8px;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.phone-content {
+  padding: 15px;
+}
+
+.schedule-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.today-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.today-indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blue-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #469aed;
+}
+
+.today-indicator span {
+  color: #242e49;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.expand-icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.appointment-card {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e9eff2;
+  background: #f8f8fb;
+}
+
+.date-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+}
+
+.month {
+  color: #469aed;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.date-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #469aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.appointment-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.time-and-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  color: #242e49;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.join-btn {
+  background: #32b3de;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 4px 8px;
+  font-size: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.duration {
+  color: #5d6a85;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.therapist-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.therapist-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+.therapist-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.therapist-role {
+  color: #5d6a85;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.therapist-name {
+  color: #242e49;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.therapist-profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-role {
+  color: #5d6a85;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.profile-name {
+  color: #242e49;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.sessions-progress {
+  width: 192px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(
+    92deg,
+    rgba(226, 243, 248, 0.7) -4.95%,
+    rgba(242, 243, 252, 0.7) 121.88%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.sessions-text {
+  color: #5d6a85;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.schedule-next {
+  color: #2292bf;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.confirmation-banner {
+  display: flex;
+  width: 182px;
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #d5e9ed;
+  background: linear-gradient(
+    100deg,
+    rgba(42, 172, 216, 0.08) 1.49%,
+    rgba(236, 143, 16, 0.07) 246.93%
+  );
+  margin-top: 10px;
+}
+
+.confirmation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.confirmation-title {
+  color: #242e49;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+.confirmation-subtitle {
+  color: #5d6a85;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.phone-2 {
+  transform: translateY(20px);
+}
+
+.phone-content-minimal {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.refill-logo span {
+  color: #6c5ce7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .my-care-plan-content {
+    width: 100%;
+    padding: 40px 20px 0 20px;
+  }
+
+  .care-plan-cards-grid {
+    flex-direction: column;
+  }
+
+  .care-plan-card {
+    width: 100%;
+    max-width: 486px;
+  }
+
+  .showcase-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .showcase-text {
+    width: 100%;
+  }
+
+  .showcase-text h2 {
+    width: 100%;
+  }
+
+  .showcase-phones {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-indicator {
+    padding-right: 100px;
+  }
+
+  .progress-dot:nth-child(4) {
+    left: 300px;
+  }
+
+  .therapist-card-text {
+    width: 100%;
+  }
+
+  .showcase-phones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-2 {
+    transform: none;
+  }
+}
