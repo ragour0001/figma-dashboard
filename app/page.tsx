@@ -12,6 +12,7 @@ import Progress from "./components/Progress";
 import MicroLearnings from "./components/MicroLearnings";
 import Resources from "./components/Resources";
 import Settings from "./components/Settings";
+import NeedHelp from "./components/NeedHelp";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -41,6 +42,8 @@ export default function Home() {
         return <Resources />;
       case "settings":
         return <Settings />;
+      case "need-help":
+        return <NeedHelp />;
       default:
         return <MainContent />;
     }
