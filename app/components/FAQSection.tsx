@@ -75,14 +75,18 @@ export default function FAQSection() {
             </p>
           </div>
           <div className="faq-item">
-            <h3 className="faq-question">How does billing work?</h3>
+            <h3 className="faq-question faq-question-medium">
+              How does billing work?
+            </h3>
             <p className="faq-answer">
               Plans are per workspace, not per account. You can upgrade one
               workspace, and still have any number of free workspaces.
             </p>
           </div>
           <div className="faq-item">
-            <h3 className="faq-question">How do I change my account email?</h3>
+            <h3 className="faq-question faq-question-medium">
+              How do I change my account email?
+            </h3>
             <p className="faq-answer">
               You can change the email address associated with your account by
               going to untitled.com/account from a laptop or desktop.
