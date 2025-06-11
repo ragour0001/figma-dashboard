@@ -220,15 +220,17 @@ a {
   border-radius: 50%;
   position: absolute;
   top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contact-text {
   display: flex;
-  width: 296px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 4px;
   text-align: center;
+  align-self: stretch;
 }
 
 .contact-title {
@@ -315,7 +317,7 @@ a {
 .feedback-banner {
   display: flex;
   width: 1070px;
-  height: 200px;
+  height: 160px;
   padding: 38px 18px;
   justify-content: space-between;
   align-items: center;
@@ -378,14 +380,16 @@ a {
   border-radius: 14px 14px 0px 0px;
   background: #fff;
   position: relative;
+  margin-top: 20px;
 }
 
 .feedback-modal {
   width: 953px;
   height: 342px;
   position: absolute;
-  left: 44px;
+  left: 50%;
   top: 16px;
+  transform: translateX(-50%);
 }
 
 .feedback-modal-header {
@@ -580,16 +584,17 @@ a {
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+  background: #fff;
+  padding-bottom: 96px;
 }
 
 .faq-header {
   display: flex;
-  padding-bottom: 96px;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 48px;
   align-self: stretch;
-  background: #fff;
+  padding: 0px 32px;
 }
 
 .faq-header h2 {
@@ -606,7 +611,6 @@ a {
   line-height: 44px;
   letter-spacing: -0.72px;
   margin: 0;
-  padding: 0px 32px;
 }
 
 .faq-grid {
