@@ -618,14 +618,7 @@ a {
   padding: 0px 32px;
 }
 
-.faq-grid > div:first-child {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-
-.faq-grid > div:last-child {
+.faq-row {
   display: flex;
   align-items: flex-start;
   gap: 32px;
