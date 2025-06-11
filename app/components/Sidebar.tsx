@@ -153,8 +153,11 @@ export default function Sidebar({
               </div>
             </div>
 
-            {/* Chart Icon */}
-            <div className="nav-item">
+            {/* Progress */}
+            <div
+              className={`nav-item ${activeSection === "progress" ? "active" : ""}`}
+              onClick={() => handleSectionClick("progress")}
+            >
               <div className="nav-item-inner">
                 <svg
                   className="nav-icon"
@@ -165,7 +168,7 @@ export default function Sidebar({
                 >
                   <path
                     d="M12 15.5V9.59625H15.5V15.5H12ZM6.25 15.5V0.5H9.75V15.5H6.25ZM0.5 15.5V5.404H4V15.5H0.5Z"
-                    fill="#666666"
+                    fill={activeSection === "progress" ? "#006B5F" : "#666666"}
                   />
                 </svg>
                 {isExpanded && <span className="nav-label">Progress</span>}
