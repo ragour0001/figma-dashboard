@@ -4106,53 +4106,492 @@ a {
 
 .app-initial {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+}
+
+.app-title {
+  color: #000;
 }
 
 .app-title h4 {
-  color: #242e49;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0;
-  line-height: 1.2;
 }
 
 .app-title p {
-  color: #6c5ce7;
-  font-size: 8px;
-  font-style: italic;
+  font-size: 10px;
+  color: #666;
   margin: 0;
-  line-height: 1.2;
 }
 
 .phone-content {
   padding: 15px;
+  height: calc(100% - 80px);
+  overflow: hidden;
 }
 
 .schedule-section {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  height: 100%;
 }
 
 .today-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .today-indicator {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .blue-dot {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #469aed;
+  background: #006b5f;
+}
+
+.today-indicator span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.expand-icon {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.appointment-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.date-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+
+.month {
+  font-size: 8px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.date-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #006b5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-circle span {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.appointment-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.time-and-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+}
+
+.join-btn {
+  background: #006b5f;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.duration {
+  font-size: 8px;
+  color: #666;
+}
+
+.therapist-info {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.therapist-avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.therapist-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.therapist-role {
+  font-size: 7px;
+  color: #666;
+}
+
+.therapist-name {
+  font-size: 8px;
+  font-weight: 600;
+  color: #000;
+}
+
+.therapist-profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.profile-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-role {
+  font-size: 8px;
+  color: #666;
+}
+
+.profile-name {
+  font-size: 9px;
+  font-weight: 600;
+  color: #000;
+}
+
+.sessions-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sessions-text {
+  font-size: 7px;
+  color: #666;
+}
+
+.schedule-next {
+  font-size: 8px;
+  color: #006b5f;
+  font-weight: 600;
+}
+
+.confirmation-banner {
+  padding: 8px;
+  background: #e8f5e8;
+  border-radius: 6px;
+  border-left: 3px solid #4caf50;
+}
+
+.confirmation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.confirmation-title {
+  font-size: 8px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.confirmation-subtitle {
+  font-size: 7px;
+  color: #666;
+}
+
+.phone-content-minimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.refill-logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #006b5f;
+}
+
+.phone-2 {
+  transform: translateY(30px);
+}
+
+/* Mobile App Section Styles */
+.mobile-app-section {
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin-top: 40px;
+}
+
+.mobile-app-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.app-info {
+  flex: 1;
+}
+
+.app-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.app-text p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.app-preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-interface {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+}
+
+.chat-header .therapist-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #006b5f 0%, #11b5a3 100%);
+}
+
+.chat-header .therapist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header .therapist-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 2px;
+}
+
+.chat-header .status {
+  font-size: 12px;
+  color: #28a745;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message.received {
+  background: #f1f3f4;
+  color: #1c1c1c;
+  align-self: flex-start;
+}
+
+.message.sent {
+  background: #006b5f;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.video-call-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #e8f5e8;
+  border-top: 1px solid #ddd;
+}
+
+.video-call-bar span {
+  font-size: 14px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.join-call-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive design for mobile app showcase */
+@media (max-width: 768px) {
+  .mobile-app-showcase {
+    padding: 40px 20px;
+  }
+
+  .showcase-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .showcase-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .showcase-text h2 {
+    font-size: 24px;
+  }
+
+  .showcase-phones {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .phone-mockup {
+    width: 180px;
+    height: 384px;
+  }
+
+  .phone-2 {
+    transform: translateY(20px);
+  }
+
+  .mobile-app-section {
+    padding: 40px 20px;
+  }
+
+  .mobile-app-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .app-text {
+    text-align: center;
+  }
+
+  .app-text h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-phones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-2 {
+    transform: translateY(0);
+  }
+
+  .app-store-buttons {
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    gap: 10px;
+  }
+
+  .app-store-btn {
+    width: 160px;
+  }
+
+  .app-text h2 {
+    font-size: 24px;
+  }
+
+  .app-text p {
+    font-size: 16px;
+  }
 }
 
 .today-indicator span {
