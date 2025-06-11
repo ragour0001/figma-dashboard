@@ -30,6 +30,8 @@ export default function Home() {
         return <MyCarePlan />;
       case "therapist-coach":
         return <TherapistCoach />;
+      case "progress":
+        return <Progress />;
       default:
         return <MainContent />;
     }
