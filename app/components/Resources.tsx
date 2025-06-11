@@ -6,7 +6,7 @@ import ResourceCard from "./ResourceCard";
 export default function Resources() {
   const resourceData = [
     {
-      type: "article",
+      type: "article" as const,
       title: "How to Recognize Burnout Before It Hits You",
       description:
         "How do you create compelling presentations that wow your colleagues and impress your managers?",
@@ -15,13 +15,13 @@ export default function Resources() {
       image: "/api/placeholder/406/240",
     },
     {
-      type: "podcast",
+      type: "podcast" as const,
       title: "Imposter Syndrom",
       tags: ["Psychology", "Life", "Education"],
       duration: "2h 32 minutes",
     },
     {
-      type: "article",
+      type: "article" as const,
       title: "How to Recognize Burnout Before It Hits You",
       description:
         "How do you create compelling presentations that wow your colleagues and impress your managers?",
@@ -30,7 +30,7 @@ export default function Resources() {
       image: "/api/placeholder/406/240",
     },
     {
-      type: "video",
+      type: "video" as const,
       title: "How to Recognize Burnout Before It Hits You",
       description:
         "How do you create compelling presentations that wow your colleagues and impress your managers?",
@@ -108,24 +108,26 @@ export default function Resources() {
 
         {/* CTA Banner */}
         <div className="cta-banner">
-          <div className="cta-content">
-            <div className="cta-icon">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                <path
-                  d="M0.417969 0.667969H13.1209V13.3709H0.417969V0.667969ZM16.8817 0.667969H29.5846V13.3709H16.8817V0.667969ZM0.417969 17.1317H13.1209V29.8346H0.417969V17.1317ZM22.1913 17.1317H24.2855V22.4309H29.5846V24.5246H24.2855V29.8346H22.1913V24.5246H16.8817V22.4309H22.1913V17.1317ZM18.9755 2.76214V11.2771H27.4905V2.76214H18.9755ZM2.51214 2.76214V11.2771H11.0271V2.76214H2.51214ZM2.51214 19.2255V27.7405H11.0271V19.2255H2.51214Z"
-                  fill="#1C1B1F"
-                />
-              </svg>
+          <div className="cta-banner-content">
+            <div className="cta-left">
+              <div className="cta-icon">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path
+                    d="M0.417969 0.667969H13.1209V13.3709H0.417969V0.667969ZM16.8817 0.667969H29.5846V13.3709H16.8817V0.667969ZM0.417969 17.1317H13.1209V29.8346H0.417969V17.1317ZM22.1913 17.1317H24.2855V22.4309H29.5846V24.5246H24.2855V29.8346H22.1913V24.5246H16.8817V22.4309H22.1913V17.1317ZM18.9755 2.76214V11.2771H27.4905V2.76214H18.9755ZM2.51214 2.76214V11.2771H11.0271V2.76214H2.51214ZM2.51214 19.2255V27.7405H11.0271V19.2255H2.51214Z"
+                    fill="#1C1B1F"
+                  />
+                </svg>
+              </div>
+              <div className="cta-text">
+                <h3>Want more curated content?</h3>
+                <p>
+                  Take your assessments and goals setup to unlock personalized
+                  learning.
+                </p>
+              </div>
             </div>
-            <div className="cta-text">
-              <h3>Want more curated content?</h3>
-              <p>
-                Take your assessments and goals setup to unlock personalized
-                learning.
-              </p>
-            </div>
+            <button className="cta-button">Goals & Asssessmmet</button>
           </div>
-          <button className="cta-button">Goals & Asssessmmet</button>
         </div>
       </div>
     </div>

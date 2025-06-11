@@ -777,14 +777,14 @@ a {
     0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
-.cta-content {
+.cta-banner-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   align-self: stretch;
 }
 
-.cta-content > div:first-child {
+.cta-left {
   display: flex;
   align-items: center;
   gap: 17px;
