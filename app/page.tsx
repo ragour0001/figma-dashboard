@@ -9,6 +9,7 @@ import GoalsAssessment from "./components/GoalsAssessment";
 import MyCarePlan from "./components/MyCarePlan";
 import TherapistCoach from "./components/TherapistCoach";
 import Progress from "./components/Progress";
+import MicroLearnings from "./components/MicroLearnings";
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
