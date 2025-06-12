@@ -33,6 +33,1085 @@ a {
   text-decoration: none;
 }
 
+/* My Care Plan Styles */
+.my-care-plan {
+  flex: 1;
+  padding: 40px 40px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.my-care-plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  max-width: 1123px;
+  width: 100%;
+}
+
+/* Wellness Journey Banner */
+.wellness-journey-banner {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.wellness-banner-content {
+  display: flex;
+  padding: 26px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  border-radius: 8px;
+  border: 1px solid #e94545;
+  background: #fff6f6;
+}
+
+.wellness-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.wellness-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.wellness-title {
+  flex: 1;
+  color: #006b5f;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+
+.progress-indicator {
+  width: 100%;
+  max-width: 1051px;
+}
+
+.progress-indicator svg {
+  width: 100%;
+  height: 20px;
+}
+
+.completion-status {
+  color: #232323;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.5px;
+}
+
+.banner-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.faq-link {
+  color: #006b5f;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.faq-link:hover {
+  text-decoration: underline;
+}
+
+.assessment-btn {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: #eff5f3;
+  box-shadow:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #006a63;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  border: none;
+  cursor: pointer;
+}
+
+.assessment-btn:hover {
+  background: #e3f1ee;
+  transform: translateY(-1px);
+}
+
+/* Therapist Matching Card */
+.therapist-matching-card {
+  display: flex;
+  padding: 26px 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #e9efec;
+}
+
+.matching-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 26px;
+  align-self: stretch;
+}
+
+.matching-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.cognition-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.matching-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.matching-title {
+  color: #06201c;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.matching-subtitle {
+  color: #06201c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.start-now-btn {
+  display: flex;
+  width: 123px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: #006a63;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  border: none;
+  cursor: pointer;
+}
+
+.start-now-btn:hover {
+  background: #005950;
+  transform: translateY(-1px);
+}
+
+/* Care Plan Section */
+.care-plan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.care-plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.care-plan-title {
+  color: #003a5d;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  margin: 0;
+}
+
+.care-plan-description {
+  color: #171d1b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.care-plan-cards {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
+
+.unlock-plan-card {
+  width: 486px;
+  height: 229px;
+  border-radius: 16px;
+  border: 1px solid #e5e7e9;
+  background: #101340;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4.75px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 70px;
+}
+
+.lock-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 31px;
+}
+
+.unlock-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.unlock-title {
+  color: #f4fbf8;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.unlock-subtitle {
+  color: #f4fbf8;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.complete-assessment-btn {
+  display: flex;
+  width: 232px;
+  height: 40px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: #fff;
+  color: #00201c;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  border: none;
+  cursor: pointer;
+}
+
+.complete-assessment-btn:hover {
+  background: #f5f5f5;
+  transform: translateY(-1px);
+}
+
+.referral-card {
+  width: 464px;
+  height: 229px;
+  border-radius: 16px;
+  border: 1px solid #e5e7e9;
+  background: #ff7e1d;
+  position: relative;
+  overflow: hidden;
+}
+
+.referral-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4.75px);
+  position: relative;
+  padding: 26px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.referral-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referral-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.referral-label {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.referral-title {
+  width: 268px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+}
+
+.referral-icon {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.referral-code-section {
+  display: flex;
+  padding: 12px 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #f1f6fb;
+}
+
+.code-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.code-label {
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  opacity: 0.5;
+}
+
+.code-display {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.code-text {
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.share-invite-btn {
+  display: flex;
+  padding: 10px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: #404040;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.share-invite-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+/* New Platform Section */
+.new-platform-section {
+  height: 350px;
+  align-self: stretch;
+  position: relative;
+  border-radius: 10px;
+  background: #f6f6f6;
+}
+
+.platform-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.platform-text {
+  display: flex;
+  width: 415px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 56px 28px;
+}
+
+.platform-label {
+  color: #5742a9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.platform-title {
+  width: 427px;
+  color: #232323;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0 0 24px 0;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.download-label {
+  color: #232323;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.store-buttons {
+  display: flex;
+  width: 267px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.store-badge {
+  height: 39px;
+  flex-shrink: 0;
+}
+
+.phone-showcase {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 786px;
+  height: 531px;
+  overflow: hidden;
+}
+
+.phone-backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+}
+
+.phone-bg {
+  position: absolute;
+  width: 403px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.phone-bg-1 {
+  left: 0px;
+  background: linear-gradient(180deg, #e3e3e3 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.phone-bg-2 {
+  left: 97px;
+  background: linear-gradient(180deg, #d1d1d1 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.phone-bg-3 {
+  left: 225px;
+  background: linear-gradient(180deg, #cac7c7 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.phone-bg-4 {
+  left: 379px;
+  background: linear-gradient(180deg, #bfbfbf 0%, rgba(237, 237, 237, 0) 100%);
+}
+
+.main-phone {
+  position: absolute;
+  left: 392px;
+  top: 45px;
+  width: 226px;
+  height: 483px;
+}
+
+.phone-frame {
+  width: 226px;
+  height: 483px;
+  border-radius: 10px;
+  background: #1a1a1a;
+  position: relative;
+}
+
+.phone-screen {
+  position: absolute;
+  left: 15px;
+  top: 59px;
+  width: 194px;
+  height: 406px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px 15px;
+  overflow: hidden;
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.app-title {
+  color: #242e49;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.12px;
+}
+
+.app-subtitle {
+  color: #6c5ce7;
+  font-family: "Inter", sans-serif;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.08px;
+}
+
+.today-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.today-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.today-indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blue-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #469aed;
+}
+
+.today-indicator span {
+  color: #242e49;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.session-timeline {
+  display: flex;
+  gap: 12px;
+}
+
+.session-entry {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.session-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+  gap: 4px;
+}
+
+.month {
+  color: #469aed;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.date-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #469aed;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-card {
+  width: 150px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e9eff2;
+  background: #f8f8fb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-time-range {
+  color: #242e49;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.join-btn {
+  padding: 2px 8px;
+  border-radius: 9px;
+  background: #32b3de;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.session-duration {
+  color: #5d6a85;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.therapist-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.therapist-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #469aed;
+}
+
+.therapist-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.therapist-role {
+  color: #5d6a85;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.therapist-name {
+  color: #242e49;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.booking-confirmation {
+  display: flex;
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #d5e9ed;
+  background: linear-gradient(
+    100deg,
+    rgba(42, 172, 216, 0.08) 1.49%,
+    rgba(236, 143, 16, 0.07) 246.93%
+  );
+}
+
+.confirmation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.confirmation-title {
+  color: #242e49;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+.confirmation-subtitle {
+  color: #5d6a85;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.secondary-phone {
+  position: absolute;
+  left: 578px;
+  top: 91px;
+  width: 183px;
+  height: 391px;
+}
+
+.phone-frame-secondary {
+  width: 183px;
+  height: 391px;
+  border-radius: 10px;
+  background: #2292bf;
+}
+
+.phone-screen-secondary {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #2292bf;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .my-care-plan {
+    padding: 20px 20px;
+  }
+
+  .my-care-plan-content {
+    max-width: 100%;
+  }
+
+  .care-plan-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unlock-plan-card,
+  .referral-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .platform-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .platform-text {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .platform-title {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .phone-showcase {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .main-phone {
+    left: 50%;
+    transform: translateX(-50%);
+    scale: 0.8;
+  }
+
+  .secondary-phone {
+    display: none;
+  }
+
+  .phone-backgrounds {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-care-plan {
+    padding: 15px 15px;
+  }
+
+  .wellness-banner-content {
+    padding: 20px 12px;
+  }
+
+  .wellness-title {
+    font-size: 18px;
+  }
+
+  .completion-status {
+    font-size: 18px;
+  }
+
+  .banner-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .assessment-btn {
+    align-self: flex-end;
+  }
+
+  .therapist-matching-card {
+    padding: 20px 16px;
+  }
+
+  .matching-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .matching-title {
+    font-size: 14px;
+  }
+
+  .matching-subtitle {
+    font-size: 14px;
+  }
+
+  .care-plan-title {
+    font-size: 20px;
+  }
+
+  .care-plan-description {
+    font-size: 14px;
+  }
+
+  .platform-title {
+    font-size: 20px;
+  }
+
+  .main-phone {
+    scale: 0.6;
+  }
+
+  .phone-showcase {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-care-plan {
+    padding: 10px 10px;
+  }
+
+  .progress-indicator svg {
+    height: 16px;
+  }
+
+  .wellness-title {
+    font-size: 16px;
+  }
+
+  .completion-status {
+    font-size: 16px;
+  }
+
+  .matching-header {
+    gap: 12px;
+  }
+
+  .cognition-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .unlock-plan-card,
+  .referral-card {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .unlock-title {
+    font-size: 18px;
+  }
+
+  .unlock-subtitle {
+    font-size: 14px;
+  }
+
+  .complete-assessment-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .referral-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .referral-title {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .referral-code-section {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .share-invite-btn {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .main-phone {
+    scale: 0.5;
+  }
+
+  .phone-showcase {
+    height: 200px;
+  }
+}
+
 /* Need Help Page Styles */
 .need-help-page {
   flex: 1;
@@ -10091,6 +11170,1070 @@ a {
   line-height: 16px;
 }
 
+/* TherapistCoach Page Styles */
+.therapist-coach-page {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.therapist-coach-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 53px;
+  max-width: 1123px;
+  width: 100%;
+}
+
+.page-header h1 {
+  color: #003a5d;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+}
+
+/* Upcoming Session Card */
+.upcoming-session-card {
+  display: flex;
+  padding: 26px 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: linear-gradient(94deg, #006b5f -2.3%, #11b5a3 98.42%);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.therapist-session-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.session-therapist-avatar {
+  width: 78px;
+  height: 78px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.session-therapist-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.session-therapist-name {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  margin: 0;
+}
+
+.session-description {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  margin: 0;
+}
+
+.session-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.reschedule-btn {
+  display: flex;
+  height: 44px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reschedule-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-now-btn {
+  display: flex;
+  height: 44px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  color: #006b5f;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.join-now-btn:hover {
+  background: #f0f0f0;
+}
+
+.session-separator {
+  width: 100%;
+  height: 1px;
+  background: #e9eff2;
+  margin: 12px 0;
+}
+
+.session-details {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.session-time-section {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  color: #54577a;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.199%;
+}
+
+.session-time-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.time-label {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.199%;
+}
+
+.session-time-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.session-date {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.199%;
+}
+
+.session-time {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132.199%;
+}
+
+.session-remarks {
+  display: flex;
+  padding: 0px 623px 14px 0px;
+  align-items: center;
+  align-self: stretch;
+}
+
+.remarks-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-right: 23px;
+}
+
+.remarks-label {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.199%;
+}
+
+.remarks-text {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132.199%;
+  margin: 0;
+}
+
+/* Search and Filters */
+.search-filters-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  align-self: stretch;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.search-field {
+  display: flex;
+  height: 44px;
+  padding: 8px 16px 8px 12px;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #ccd8df;
+  background: #fefefe;
+}
+
+.search-input {
+  color: #999;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.filter-button {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 13px;
+  border-radius: 38px;
+  background: #e9e9e9;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button span {
+  color: #00201c;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.447%;
+}
+
+.active-filters {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.filter-chip {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #bec9c6;
+  background: #fff;
+}
+
+.filter-chip-label {
+  color: #3f4947;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 6px 8px 6px 12px;
+}
+
+.filter-chip-remove {
+  width: 18px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 8px 6px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Therapist Grid */
+.therapist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.therapist-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 24px;
+}
+
+.therapist-card {
+  display: flex;
+  width: 283px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  background: #fff;
+}
+
+.therapist-card-image {
+  height: 180px;
+  align-self: stretch;
+  position: relative;
+  background: #f0f0f0;
+}
+
+.therapist-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.availability-badge {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  border-radius: 12px;
+  background: rgba(39, 123, 83, 0.09);
+  backdrop-filter: blur(6px);
+}
+
+.availability-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #277b53;
+}
+
+.availability-badge span {
+  color: #277b53;
+  text-align: center;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.therapist-card-content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.therapist-profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.therapist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.therapist-name {
+  color: #292d32;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.therapist-title {
+  color: #54577a;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  margin: 0;
+}
+
+.therapist-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 8px;
+}
+
+.rating-value {
+  color: #ffb063;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.therapist-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.specializations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.specialization-tag {
+  color: #00201c;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.447%;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 38px;
+  background: #cde8e1;
+}
+
+.session-booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.session-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.session-label {
+  color: #242e49;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.085px;
+  letter-spacing: -0.54px;
+}
+
+.session-time-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #54577a;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.199%;
+}
+
+.session-time {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.session-day {
+  font-weight: 400;
+}
+
+.book-now-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #006a63;
+  border: none;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.book-now-btn:hover {
+  background: #005a54;
+}
+
+/* New Platform Section */
+.new-platform-section {
+  align-self: stretch;
+  position: relative;
+  background: #f6f6f6;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+.platform-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 56px 40px;
+  position: relative;
+  height: 100%;
+}
+
+.platform-info {
+  width: 415px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 2;
+}
+
+.platform-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.platform-label {
+  color: #5742a9;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.platform-title {
+  color: #232323;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0;
+  width: 427px;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.download-title {
+  color: #232323;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.app-store-btn,
+.google-play-btn {
+  height: 39px;
+  border-radius: 8px;
+  background: #000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+.app-store-btn {
+  width: 118px;
+}
+
+.google-play-btn {
+  width: 132px;
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.store-line1 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.store-line2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.phone-mockups {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 100%;
+  z-index: 1;
+}
+
+.phone-showcase {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+.phone-mockup {
+  width: 200px;
+  height: 400px;
+  background: #333;
+  border-radius: 20px;
+  position: relative;
+  transform: perspective(800px) rotateY(-10deg);
+}
+
+.phone-2 {
+  transform: perspective(800px) rotateY(-15deg) translateX(-50px);
+  z-index: 0;
+}
+
+.phone-screen {
+  width: 180px;
+  height: 360px;
+  background: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.phone-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.phone-logo {
+  width: 60px;
+  height: 24px;
+  background: #6c5ce7;
+  border-radius: 4px;
+}
+
+.phone-app-title {
+  color: #242e49;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  margin: 0;
+}
+
+.phone-app-subtitle {
+  color: #6c5ce7;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 7px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 0;
+}
+
+.today-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.today-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #469aed;
+}
+
+.today-indicator span {
+  color: #242e49;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.session-time-mobile {
+  color: #242e49;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.session-duration {
+  color: #5d6a85;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 10px;
+}
+
+.therapist-info-mobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.therapist-avatar-mobile {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #d9d9d9;
+}
+
+.therapist-details-mobile {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.therapist-role {
+  color: #5d6a85;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.therapist-name {
+  color: #242e49;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.join-now-mobile {
+  background: #32b3de;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.refill-health-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 8px;
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6c5ce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.refill-health-logo span {
+  color: #666;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .progress-page-main {
@@ -10146,6 +12289,52 @@ a {
     left: 0;
     top: 20px;
     padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .therapist-coach-page {
+    padding: 20px;
+  }
+
+  .therapist-coach-content {
+    max-width: 100%;
+  }
+
+  .therapist-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .therapist-card {
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+  }
+
+  .session-remarks {
+    padding-right: 0;
+  }
+
+  .platform-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .platform-info {
+    width: 100%;
+  }
+
+  .platform-title {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .phone-mockups {
+    position: relative;
+    width: 100%;
+    height: 300px;
   }
 }
 
@@ -10272,5 +12461,96 @@ a {
   .google-play-btn {
     width: 100%;
     justify-content: center;
+  }
+
+  /* TherapistCoach mobile styles */
+  .therapist-coach-page {
+    padding: 16px;
+  }
+
+  .therapist-coach-content {
+    gap: 32px;
+  }
+
+  .session-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .session-actions {
+    align-self: stretch;
+    justify-content: space-between;
+  }
+
+  .reschedule-btn,
+  .join-now-btn {
+    flex: 1;
+    max-width: calc(50% - 6px);
+  }
+
+  .session-details {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .session-time-section {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .session-remarks {
+    padding-right: 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .active-filters {
+    flex-wrap: wrap;
+  }
+
+  .therapist-row {
+    flex-direction: column;
+  }
+
+  .therapist-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .specializations {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .session-booking {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .book-now-btn {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .phone-showcase {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-mockup {
+    transform: none;
+    width: 150px;
+    height: 300px;
+  }
+
+  .phone-2 {
+    transform: none;
   }
 }
